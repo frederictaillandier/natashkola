@@ -2,6 +2,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+:root {
+  --red: #b00;
+  --cyan: #b6f7f0ff;
+  --fullwidth: 100%;
+}
+
+
 div.card-header {
  font-size: large;
 }
@@ -12,4 +19,13 @@ div.card {
 
 .table {
   margin-top: 10px
+}
+
+body {
+  background-color: var(--cyan);
+
+}
+
+.container{
+  max-width: 100%;
 }
