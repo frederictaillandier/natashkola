@@ -11,8 +11,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-	- uses: actions/checkout@v2
-	- name: running develop ci
-	  run: |
-	  echo aaa
-	  echo test and done
+        - uses: actions/checkout@v2
+        - name: running develop ci
+          run: |
+            echo aaa
+            echo test and done
