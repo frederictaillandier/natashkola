@@ -16,6 +16,6 @@ jobs:
           with:
 	      command: ls -a
               host: ${{ secrets.HOST }}
-	      username: fred
-	      passphrase: ${{ secrets.PASSPHRASE }}
-	      privateKey: ${{ secrets.PRIVATE_KEY }}
+              username: fred
+              passphrase: ${{ secrets.PASSPHRASE }}
+              privateKey: ${{ secrets.PRIVATE_KEY }}
