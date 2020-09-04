@@ -12,10 +12,11 @@ jobs:
 
         steps:
         - name: running develop ci
-          uses: actions/checkout@v2
+          uses: appleboy/ssh-action@master
           with:
-              command: touch test
+              script: whoami
               host: ${{ secrets.HOST }}
               username: fred
               passphrase: ${{ secrets.PASSPHRASE }}
               privateKey: ${{ secrets.PRIVATE_KEY }}
+              port: 22
