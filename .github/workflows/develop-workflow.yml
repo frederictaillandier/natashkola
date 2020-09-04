@@ -11,12 +11,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-        - name: running develop ci
+        - name: executing remote ssh commands using password
           uses: appleboy/ssh-action@master
           with:
-              script: whoami
-              host: ${{ secrets.HOST }}
-              username: fred
-              passphrase: ${{ secrets.PASSPHRASE }}
-              privateKey: ${{ secrets.PRIVATE_KEY }}
-              port: 22
+            host: ${{ secrets.HOST }}
+            username: fred
+            password: ${{ secrets.PASSWORD }}
+            port: 22
+            script: whoami
