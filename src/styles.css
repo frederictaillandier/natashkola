@@ -3,7 +3,6 @@
 @import "~font-awesome/css/font-awesome.min.css";
 
 :root {
-  --red: #b00;
   --my_cyan: #b6f7f0ff;
   --my_forest: #108fa8;
   --my_pink: #f5ccd8;
@@ -15,21 +14,9 @@
   src: url(./assets/fonts/chunk_five_font.otf) format("opentype");
 }
 
-
-div.card-header {
- font-size: large;
-}
-
-div.card {
-  margin-top: 10px
-}
-
-.table {
-  margin-top: 10px
-}
-
-body {
-  background-color: var(--my_cyan);
+@font-face {
+  font-family: script;
+  src: url(./assets/fonts/lobster.ttf) format("opentype");
 }
 
 .container{
@@ -41,9 +28,12 @@ h1 {
   font-family: 'chunk', 'arial', sans-serif;
 }
 
-h4 {
+h2 {
   color: var(--my_pink);
   font-family: 'chunk', 'arial', sans-serif;
 }
 
-
+h3 {
+  color: var(--my_forest);
+  font-family: 'script', 'arial', sans-serif;
+}

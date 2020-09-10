@@ -1,13 +1,11 @@
 .landing {
-
+  background-color: var(--my_cyan);
 }
 
 .left-picture {
-  background-color: aquamarine;
   padding: 0;
 
   img {
     max-height: 90vh;
   }
-
 }

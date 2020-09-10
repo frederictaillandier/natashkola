@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'pm-landing-text',
@@ -6,5 +7,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./landing-text.component.scss']
 })
 export class LandingTextComponent {
+  constructor(private router: Router) {
+  }
+
+  quotationClick() {
+    this.router.navigateByUrl('/quotation').then();
+  }
 
 }

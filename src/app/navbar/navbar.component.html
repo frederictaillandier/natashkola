@@ -1,7 +1,18 @@
-<nav class='navbar navbar-expand navbar-light'>
-  <a class='navbar-brand'>{{pageTitle}}</a>
-  <ul class='nav nav-pills'>
-    <li><a class='nav-link' [routerLink]="['/welcome']">Home</a></li>
-    <li><a class='nav-link' [routerLink]="['/products']">Product List</a></li>
-  </ul>
+<nav>
+  <div class="container">
+    <div class="row">
+      <div *ngIf="showTitle()" class="col-auto">
+        <a class='nav-link' [routerLink]="['/landing']">
+          <h1>{{"SchoolName" | translate}}</h1>
+        </a>
+      </div>
+      <div class="col"></div>
+      <div class="col-auto">
+        <a class='nav-link' [routerLink]="['/quotation']">Quotation</a>
+      </div>
+      <div class="col-auto">
+        <a class='nav-link' [routerLink]="['/quotation']">Quotation</a>
+      </div>
+    </div>
+  </div>
 </nav>
