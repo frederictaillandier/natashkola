@@ -11,6 +11,6 @@ h3 {
   text-align: center;
 }
 
-img {
-  height: 100%;
+.choice-picture {
+  height: 64px;
 }
