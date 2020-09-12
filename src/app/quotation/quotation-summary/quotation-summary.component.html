@@ -1,0 +1,17 @@
+<div class="quotation-row container">
+  <div class="row">
+    <div class="col-auto" *ngFor="let choice of getFormattedChoices()">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img *ngIf="choice.imageUrl" src="{{choice.imageUrl}}">
+            <h3 *ngIf="choice.name">{{choice.name}}</h3>
+          </div>
+          <div class="col">
+            <h3>{{choice.label}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {QuotationComponent} from './quotation/quotation.component';
 import {QuotationStepComponent} from './quotation/quotation-step/quotation-step.component';
 import {QuotationOptionComponent} from './quotation/quotation-step/quotation-option/quotation-option.component';
+import {QuotationSummaryComponent} from "./quotation/quotation-summary/quotation-summary.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     QuotationComponent,
     QuotationStepComponent,
     QuotationOptionComponent,
+    QuotationSummaryComponent,
     LandingComponent,
     LandingTextComponent,
     NavbarComponent

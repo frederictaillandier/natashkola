@@ -21,8 +21,7 @@ export class QuotationService {
   constructor(private router: Router) {
   }
 
-
-
+  // Todo : set to environements
   steps: StepConfig[] = [
     {
       question: 'QuotationLanguageTitle',
@@ -117,6 +116,13 @@ export class QuotationService {
   getCurrentChoiceOptions(): ChoiceConfig[]
   {
     return this.steps[this._currentStep].choices;
+  }
+
+  getFormatedChoices(): ChoiceConfig[]
+  {
+    return this._choices.map((choice, index) =>
+      this.steps[index].choices[choice]
+    );
   }
 }
 
