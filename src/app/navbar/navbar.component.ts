@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'pm-navbar',
@@ -6,5 +7,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  pageTitle = 'Natashkola';
+
+  constructor(private router: Router) {
+  }
+  showTitle(): boolean{
+    return !this.router.url.includes('landing');
+  }
+
 }

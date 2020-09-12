@@ -5,7 +5,7 @@ import {TranslateService} from '@ngx-translate/core';
   selector: 'pm-root',
   template: `
     <pm-navbar></pm-navbar>
-    <div class='container'>
+    <div>
       <router-outlet></router-outlet>
     </div>
   `

@@ -5,5 +5,20 @@
   "LandingList2": "Qualified teacher",
   "LandingList3": "Fully online, no need to move",
   "LandingList4": "Twice a week for 2 months",
-  "QuotationButton": "Free quotation"
+  "QuotationButton": "Free quotation",
+  "QuotationLanguageTitle": "Which language do you want to learn ?",
+  "French": "French",
+  "Spanish": "Spanish",
+  "QuotationSizeTitle": "Private lesson or groups class ?",
+  "Personal": "Personal",
+  "Small": "Small",
+  "Big": "Big",
+  "QuotationLevelTitle": "What is your level ?",
+  "Beginner": "Beginner",
+  "UpperBeginner": "Upper Beginner",
+  "Intermediate": "Intermediate",
+  "UpperIntermediate": "Upper Intermediate",
+  "Advanced": "Advanced",
+  "UpperAdvanced": "Upper Advanced",
+  "Unknown": "Unknown"
 }

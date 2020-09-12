@@ -10,7 +10,10 @@ import {LandingComponent} from './landing/landing.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {LandingTextComponent} from './landing/landing-text/landing-text.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {QuotationComponent} from './quotation/quotation.component';
+import {QuotationStepComponent} from './quotation/quotation-step/quotation-step.component';
+import {QuotationOptionComponent} from './quotation/quotation-step/quotation-option/quotation-option.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -21,6 +24,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     WelcomeComponent,
+    QuotationComponent,
+    QuotationStepComponent,
+    QuotationOptionComponent,
     LandingComponent,
     LandingTextComponent,
     NavbarComponent
@@ -39,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RouterModule.forRoot([
       {path: 'welcome', component: WelcomeComponent},
       {path: 'landing', component: LandingComponent},
+      {path: 'quotation', component: QuotationComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),
