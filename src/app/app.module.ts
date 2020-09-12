@@ -14,7 +14,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {QuotationComponent} from './quotation/quotation.component';
 import {QuotationStepComponent} from './quotation/quotation-step/quotation-step.component';
 import {QuotationOptionComponent} from './quotation/quotation-step/quotation-option/quotation-option.component';
-import {QuotationSummaryComponent} from "./quotation/quotation-summary/quotation-summary.component";
+import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation-summary.component';
+import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     QuotationStepComponent,
     QuotationOptionComponent,
     QuotationSummaryComponent,
+    QuotationProcessingComponent,
     LandingComponent,
     LandingTextComponent,
     NavbarComponent
@@ -48,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       {path: 'welcome', component: WelcomeComponent},
       {path: 'landing', component: LandingComponent},
       {path: 'quotation', component: QuotationComponent},
+      {path: 'quotation-redirect', component: QuotationProcessingComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),

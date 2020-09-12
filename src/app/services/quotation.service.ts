@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
+import {of} from "rxjs";
+import {delay} from "rxjs/operators";
 
 export class ChoiceConfig {
   imageUrl?: string;
@@ -18,6 +20,8 @@ export class StepConfig {
 export class QuotationService {
   private _currentStep = 0;
   private _choices: number[] = [];
+  private _loading = false;
+
   constructor(private router: Router) {
   }
 
@@ -92,7 +96,7 @@ export class QuotationService {
     ++this._currentStep;
     if (this._currentStep >= this.steps.length) {
       this._currentStep = 0;
-      this.router.navigateByUrl('/landing').then();
+      this.runQuery();
     }
   }
 
@@ -123,6 +127,21 @@ export class QuotationService {
     return this._choices.map((choice, index) =>
       this.steps[index].choices[choice]
     );
+  }
+
+  get loading() {
+    return this._loading;
+  }
+
+  runQuery() {
+    this._loading = true;
+    // Todo : Interrogate database
+    of('dummy').pipe(delay(3000)).subscribe(
+      x => {
+        this._loading = false;
+        this.router.navigateByUrl('/landing').then();
+      });
+
   }
 }
 

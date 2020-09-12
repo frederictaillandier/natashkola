@@ -7,4 +7,8 @@ import {QuotationService} from '../services/quotation.service';
 export class QuotationComponent {
   constructor(private quotationService: QuotationService) {
   }
+
+  get loading(): boolean {
+    return this.quotationService.loading;
+  }
 }

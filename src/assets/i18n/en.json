@@ -20,5 +20,6 @@
   "UpperIntermediate": "Upper Intermediate",
   "Advanced": "Advanced",
   "UpperAdvanced": "Upper Advanced",
-  "Unknown": "Unknown"
+  "Unknown": "Unknown",
+  "QuotationProcessing": "Processing..."
 }

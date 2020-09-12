@@ -1,11 +1,23 @@
 .landing {
   background-color: var(--my_cyan);
+  height: 90vh;
 }
+
 
 .left-picture {
   padding: 0;
-
+  overflow: hidden;
+  height: 90vh;
   img {
-    max-height: 90vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    mix-blend-mode: multiply;
   }
 }

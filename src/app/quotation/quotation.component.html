@@ -1,4 +1,5 @@
 <div class="quotationBackground">
   <pm-quotation-summary></pm-quotation-summary>
-  <pm-quotation-step></pm-quotation-step>
+  <pm-quotation-processing *ngIf="loading"></pm-quotation-processing>
+  <pm-quotation-step *ngIf="!loading"></pm-quotation-step>
 </div>
