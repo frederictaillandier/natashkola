@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import {of} from "rxjs";
-import {delay} from "rxjs/operators";
+import {of} from 'rxjs';
+import {delay} from 'rxjs/operators';
 
 export class ChoiceConfig {
   imageUrl?: string;
@@ -18,7 +18,7 @@ export class StepConfig {
   providedIn: 'root'
 })
 export class QuotationService {
-  private _currentStep = 0;
+  private _currentQuestion = 0;
   private _choices: number[] = [];
   private _loading = false;
 
@@ -26,7 +26,7 @@ export class QuotationService {
   }
 
   // Todo : set to environements
-  steps: StepConfig[] = [
+  questions: StepConfig[] = [
     {
       question: 'QuotationLanguageTitle',
       choices: [
@@ -92,40 +92,40 @@ export class QuotationService {
     }
   ];
 
-  next() {
-    ++this._currentStep;
-    if (this._currentStep >= this.steps.length) {
-      this._currentStep = 0;
-      this.runQuery();
-    }
+  nextQuestion() {
+    ++this._currentQuestion;
   }
 
-  back() {
-    --this._currentStep;
+  hasQuestionsLeft(): boolean {
+    return this._currentQuestion < this.questions.length;
   }
 
   setCurrentOption(option: number) {
-    this._choices[this._currentStep] = option;
+    this._choices[this._currentQuestion] = option;
   }
 
-  getChoices(): number[] {
-    return this._choices;
+  getCurrentQuestion(): string {
+    if (this.hasQuestionsLeft()) {
+      return this.questions[this._currentQuestion].question;
+    }
+    return null;
   }
 
-  getCurrentQuestion(): string
-  {
-    return this.steps[this._currentStep].question;
+  setCurrentQuestion(index: number) {
+    this._currentQuestion = index;
   }
 
-  getCurrentChoiceOptions(): ChoiceConfig[]
-  {
-    return this.steps[this._currentStep].choices;
+  getCurrentChoiceOptions(): ChoiceConfig[] {
+    if (this.hasQuestionsLeft()) {
+      return this.questions[this._currentQuestion].choices;
+    }
+    return null;
   }
 
   getFormatedChoices(): ChoiceConfig[]
   {
     return this._choices.map((choice, index) =>
-      this.steps[index].choices[choice]
+      this.questions[index].choices[choice]
     );
   }
 

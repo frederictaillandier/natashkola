@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {ChoiceConfig, QuotationService} from '../../../services/quotation.service';
 
 
@@ -13,12 +13,14 @@ export class QuotationOptionComponent {
   @Input() optionNumber: number;
   @Input() optionData: ChoiceConfig;
 
+  @Output()
+  chosen: EventEmitter<number> = new EventEmitter<number>();
+
   constructor(private quotationService: QuotationService) {
   }
 
   selectOption() {
-    this.quotationService.setCurrentOption(this.optionNumber);
-    this.quotationService.next();
+    this.chosen.emit(this.optionNumber);
   }
 
   get hasPicture(): boolean {
@@ -38,12 +40,6 @@ export class QuotationOptionComponent {
   }
   get name(): string{
     return this.optionData.name;
-  }
-
-  get haslabel(): boolean {
-    return this.optionData.label !== undefined
-      && this.optionData.label !== null
-      && this.optionData.label !== '';
   }
 
   get label(): string {

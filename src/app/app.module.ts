@@ -12,10 +12,11 @@ import {LandingTextComponent} from './landing/landing-text/landing-text.componen
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {QuotationComponent} from './quotation/quotation.component';
-import {QuotationStepComponent} from './quotation/quotation-step/quotation-step.component';
-import {QuotationOptionComponent} from './quotation/quotation-step/quotation-option/quotation-option.component';
+import {QuotationQuestionComponent} from './quotation/quotation-question/quotation-question.component';
+import {QuotationOptionComponent} from './quotation/quotation-question/quotation-option/quotation-option.component';
 import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation-summary.component';
 import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
+import {QuotationResultComponent} from './quotation/quotation-result/quotation-result.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,10 +28,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     WelcomeComponent,
     QuotationComponent,
-    QuotationStepComponent,
+    QuotationQuestionComponent,
     QuotationOptionComponent,
     QuotationSummaryComponent,
     QuotationProcessingComponent,
+    QuotationResultComponent,
     LandingComponent,
     LandingTextComponent,
     NavbarComponent
