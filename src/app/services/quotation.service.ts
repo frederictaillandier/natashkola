@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
+import {of} from 'rxjs';
+import {delay} from 'rxjs/operators';
 
 export class ChoiceConfig {
   imageUrl?: string;
@@ -16,14 +18,15 @@ export class StepConfig {
   providedIn: 'root'
 })
 export class QuotationService {
-  private _currentStep = 0;
+  private _currentQuestion = 0;
   private _choices: number[] = [];
+  private _loading = false;
+
   constructor(private router: Router) {
   }
 
-
-
-  steps: StepConfig[] = [
+  // Todo : set to environements
+  questions: StepConfig[] = [
     {
       question: 'QuotationLanguageTitle',
       choices: [
@@ -89,34 +92,56 @@ export class QuotationService {
     }
   ];
 
-  next() {
-    ++this._currentStep;
-    if (this._currentStep >= this.steps.length) {
-      this._currentStep = 0;
-      this.router.navigateByUrl('/landing').then();
-    }
+  nextQuestion() {
+    ++this._currentQuestion;
   }
 
-  back() {
-    --this._currentStep;
+  hasQuestionsLeft(): boolean {
+    return this._currentQuestion < this.questions.length;
   }
 
   setCurrentOption(option: number) {
-    this._choices[this._currentStep] = option;
+    this._choices[this._currentQuestion] = option;
   }
 
-  getChoices(): number[] {
-    return this._choices;
+  getCurrentQuestion(): string {
+    if (this.hasQuestionsLeft()) {
+      return this.questions[this._currentQuestion].question;
+    }
+    return null;
   }
 
-  getCurrentQuestion(): string
+  setCurrentQuestion(index: number) {
+    this._currentQuestion = index;
+  }
+
+  getCurrentChoiceOptions(): ChoiceConfig[] {
+    if (this.hasQuestionsLeft()) {
+      return this.questions[this._currentQuestion].choices;
+    }
+    return null;
+  }
+
+  getFormatedChoices(): ChoiceConfig[]
   {
-    return this.steps[this._currentStep].question;
+    return this._choices.map((choice, index) =>
+      this.questions[index].choices[choice]
+    );
   }
 
-  getCurrentChoiceOptions(): ChoiceConfig[]
-  {
-    return this.steps[this._currentStep].choices;
+  get loading() {
+    return this._loading;
+  }
+
+  runQuery() {
+    this._loading = true;
+    // Todo : Interrogate database
+    of('dummy').pipe(delay(3000)).subscribe(
+      x => {
+        this._loading = false;
+        this.router.navigateByUrl('/landing').then();
+      });
+
   }
 }
 

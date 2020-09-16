@@ -1,12 +1,16 @@
 .landing-text {
   text-align: center;
 }
+h1 {
+  font-size: 4em;
+  min-height: 15vh;
+}
 
-.country-logo{
-
-
+h2 {
+  min-height: 15vh;
+}
+.country-logo {
   img {
     max-width: 100%;
-
   }
 }
