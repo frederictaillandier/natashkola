@@ -1,6 +1,9 @@
 .quotation-row {
   height: 15vh;
 }
+.quotation-row-double {
+  height: 30vh;
+}
 
 h2 {
   margin: 0 auto;

@@ -1,5 +1,6 @@
 import {Component, EventEmitter} from '@angular/core';
 import {IQuotationStep} from '../iquotation-step';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'pm-quotation-result',
@@ -9,4 +10,13 @@ import {IQuotationStep} from '../iquotation-step';
 })
 export class QuotationResultComponent implements IQuotationStep {
   nextStep: EventEmitter<number> = new EventEmitter<number>();
+
+  get PhoneNumber() {
+    return environment.contact.phone;
+  }
+
+  get Mail() {
+    return environment.contact.mail;
+  }
+
 }

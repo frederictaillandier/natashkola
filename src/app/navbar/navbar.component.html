@@ -3,15 +3,15 @@
     <div class="row">
       <div *ngIf="showTitle()" class="col-auto">
         <a class='nav-link' [routerLink]="['/landing']">
-          <h1>{{"SchoolName" | translate}}</h1>
+          <h1>{{SchoolName}}</h1>
         </a>
       </div>
       <div class="col"></div>
       <div class="col-auto">
-        <a class='nav-link' [routerLink]="['/quotation']">Quotation</a>
+        <a class='nav-link' [routerLink]="['/quotation']">{{"Quotation" | translate}}</a>
       </div>
       <div class="col-auto">
-        <a class='nav-link' [routerLink]="['/quotation']">Quotation</a>
+        <a class='nav-link' [routerLink]="['/quotation']">{{"Quotation" | translate}}</a>
       </div>
     </div>
   </div>

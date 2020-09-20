@@ -44,15 +44,15 @@ export class QuotationService {
       question: 'QuotationSizeTitle',
       choices: [
         {
-          imageUrl: './assets/images/france_logo.png',
+          imageUrl: './assets/images/individual_logo.png',
           label: 'Personal'
         },
         {
-          imageUrl: './assets/images/france_logo.png',
+          imageUrl: './assets/images/small_group_logo.png',
           label: 'Small'
         },
         {
-          imageUrl: './assets/images/france_logo.png',
+          imageUrl: './assets/images/group_logo.png',
           label: 'Big'
         }
       ]
