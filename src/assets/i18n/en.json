@@ -1,10 +1,10 @@
 {
-  "SchoolName": "Natashkola",
   "LandingTitleH4": "Learn spanish or french online with a fully certified teacher from the comfort of your home",
   "LandingList1": "Affordable classes in small groups or private",
   "LandingList2": "Qualified teacher",
   "LandingList3": "Fully online, no need to move",
   "LandingList4": "Twice a week for 2 months",
+  "Quotation": "Quotation",
   "QuotationButton": "Free quotation",
   "QuotationLanguageTitle": "Which language do you want to learn ?",
   "French": "French",
@@ -21,5 +21,7 @@
   "Advanced": "Advanced",
   "UpperAdvanced": "Upper Advanced",
   "Unknown": "Unknown",
-  "QuotationProcessing": "Processing..."
+  "QuotationProcessing": "Processing...",
+  "QuotationCallUs": "Call us or or email us to book",
+  "QuotationResultTitle": "Next session starts on July 1st"
 }

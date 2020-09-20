@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'pm-landing-text',
@@ -14,4 +15,7 @@ export class LandingTextComponent {
     this.router.navigateByUrl('/quotation').then();
   }
 
+  get SchoolName() {
+    return environment.contact.name;
+  }
 }

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'pm-navbar',
@@ -13,5 +14,7 @@ export class NavbarComponent {
   showTitle(): boolean{
     return !this.router.url.includes('landing');
   }
-
+  get SchoolName() {
+    return environment.contact.name;
+  }
 }
