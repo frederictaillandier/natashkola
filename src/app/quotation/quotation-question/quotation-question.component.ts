@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {ChoiceConfig, QuotationService} from '../../services/quotation.service';
-import {IQuotationStep} from "../iquotation-step";
+import {QuotationService} from '../../services/quotation.service';
+import {IQuotationStep} from '../iquotation-step';
+import {ChoiceConfig} from '../../dtos/step-config.dto';
 
 @Component({
   selector: 'pm-quotation-step',

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {ChoiceConfig, QuotationService} from '../../services/quotation.service';
+import {QuotationService} from '../../services/quotation.service';
+import {ChoiceConfig} from '../../dtos/step-config.dto';
 
 @Component({
   selector: 'pm-quotation-summary',
