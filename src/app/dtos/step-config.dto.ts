@@ -6,5 +6,6 @@ export class ChoiceConfig {
 
 export class StepConfig {
   question: string;
+  property: string;
   choices: ChoiceConfig[];
 }

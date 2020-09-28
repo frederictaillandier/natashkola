@@ -7,7 +7,21 @@
     <div class="col">
       <ul>
         <li *ngFor="let course of AvailableCourses">
-          {{ course.occurrences[0].day }} - {{ course.occurrences[0].hour }}
+          <span *ngFor="let occurrence of course.occurrences, let index = index">
+            <span *ngIf="index > 0">{{"And" | translate}}&nbsp;</span>
+            <span>{{ "CourseOccurrence" | translate:
+              {
+                day: "DaysOfTheWeek" + occurrence.day | translate,
+                hour: occurrence.hour
+              }
+              }}
+            </span>
+          </span><br/>
+          <span>{{"StartingOn" | translate : {
+            day: course.start.getDate(),
+            month: "Month" + course.start.getMonth() | translate
+            }
+            }}</span>
         </li>
       </ul>
     </div>

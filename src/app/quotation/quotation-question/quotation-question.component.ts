@@ -20,10 +20,12 @@ export class QuotationQuestionComponent implements IQuotationStep {
 
   onChooseOption(opt: number) {
     this.quotationService.setCurrentOption(opt);
-    this.quotationService.nextQuestion();
-    if (!this.quotationService.hasQuestionsLeft()) {
-      this.nextStep.emit(0);
-    }
+    this.quotationService.getAvailableCourses().subscribe(result => {
+      this.quotationService.nextQuestion();
+      if (!this.quotationService.hasQuestionsLeft() || result.length < 0) {
+        this.nextStep.emit(0);
+      }
+    });
   }
 
   getCurrentQuestion(): string {

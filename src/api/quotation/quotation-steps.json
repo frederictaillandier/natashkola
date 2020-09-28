@@ -1,6 +1,7 @@
 [
   {
     "question": "QuotationLanguageTitle",
+    "property": "language",
     "choices": [
       {
         "imageUrl": "./assets/images/france_logo.png",
@@ -14,30 +15,31 @@
   },
   {
     "question": "QuotationLevelTitle",
+    "property": "level",
     "choices": [
       {
         "name": "A1",
-        "label": "Beginner"
+        "label": "A1"
       },
       {
         "name": "A2",
-        "label": "UpperBeginner"
+        "label": "A2"
       },
       {
         "name": "B1",
-        "label": "Intermediate"
+        "label": "B1"
       },
       {
         "name": "B2",
-        "label": "UpperIntermediate"
+        "label": "B2"
       },
       {
         "name": "C1",
-        "label": "Advanced"
+        "label": "C1"
       },
       {
         "name": "C2",
-        "label": "UpperAdvanced"
+        "label": "C2"
       },
       {
         "name": "??",
@@ -47,6 +49,7 @@
   },
   {
     "question": "QuotationSizeTitle",
+    "property": "groupSize",
     "choices": [
       {
         "imageUrl": "./assets/images/individual_logo.png",
@@ -54,11 +57,7 @@
       },
       {
         "imageUrl": "./assets/images/small_group_logo.png",
-        "label": "Small"
-      },
-      {
-        "imageUrl": "./assets/images/group_logo.png",
-        "label": "Big"
+        "label": "Group"
       }
     ]
   }

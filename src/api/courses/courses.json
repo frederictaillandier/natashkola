@@ -13,7 +13,8 @@
         "hour": 19
       }
     ],
-    "language": "Spanish"
+    "language": "Spanish",
+    "groupSize": "Group"
   },
   {
     "level": "A2",
@@ -29,7 +30,8 @@
         "hour": 20.5
       }
     ],
-    "language": "Spanish"
+    "language": "Spanish",
+    "groupSize": "Group"
   },
   {
     "level": "A1",
@@ -45,7 +47,8 @@
         "hour": 9
       }
     ],
-    "language": "French"
+    "language": "French",
+    "groupSize": "Group"
   },
   {
     "level": "A2",
@@ -61,6 +64,7 @@
         "hour": 10.5
       }
     ],
-    "language": "French"
+    "language": "French",
+    "groupSize": "Group"
   }
 ]

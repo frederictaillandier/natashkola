@@ -4,6 +4,8 @@ import { environment } from '../../../environments/environment';
 import {QuotationService} from '../../services/quotation.service';
 import {CourseDto} from '../../dtos/course.dto';
 
+
+
 @Component({
   selector: 'pm-quotation-result',
   templateUrl: './quotation-result.component.html',
@@ -16,7 +18,14 @@ export class QuotationResultComponent implements IQuotationStep {
 
 
   constructor(private _quotationService: QuotationService) {
-    this._quotationService.getAvailableCourses().subscribe(result => this.availableCourses = result);
+    this._quotationService.getAvailableCourses().subscribe(result => this.availableCourses = result.map(x =>
+    {
+      const item = x;
+      // we need to convert json Date as proper Date
+      item.start = new Date(x.start);
+      item.end = new Date(x.end);
+      return item;
+    }));
   }
 
 
@@ -30,6 +39,14 @@ export class QuotationResultComponent implements IQuotationStep {
 
   get AvailableCourses(): CourseDto[] {
     return this.availableCourses;
+  }
+
+  getDate(date: Date): number {
+    return date.getDate();
+  }
+
+  getMonth(date: Date): number {
+    return date.getMonth();
   }
 
 }

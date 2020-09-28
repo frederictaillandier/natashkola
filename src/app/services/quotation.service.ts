@@ -48,11 +48,21 @@ export class QuotationService {
       );
   }
 
+  // Todo: backend function
   getAvailableCourses(): Observable<CourseDto[]> {
     return this.http.get<CourseDto[]>(this.coursesUrl)
       .pipe(
-        map(data => data.filter(item => item.language === 'French' && item.level === 'A1')),
-        catchError(this.handleError)
+        map(data => data.filter(item =>
+        {
+          for (const [index, value] of this._choices.entries())
+          {
+            if (item[this._questionSteps[index].property] !== this._questionSteps[index].choices[value].label){
+              return false;
+            }
+          }
+          return true;
+        })),
+          catchError(this.handleError)
       );
   }
 
