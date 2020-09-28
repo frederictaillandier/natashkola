@@ -6,9 +6,34 @@
     <img class="col-auto" src="./assets/images/quotation_result_side.jpg"/>
     <div class="col">
       <ul>
-        <li>Mondays and Tuesdays at 8pm</li>
-        <li>Mondays and Thursdays at 8pm</li>
-        <li>Tuesdays and Fridays at 7pm</li>
+        <li *ngFor="let course of AvailableCourses">
+          <span *ngFor="let occurrence of course.occurrences, let index = index">
+            <span *ngIf="index > 0">{{"And" | translate}}&nbsp;</span>
+            <span>{{ "CourseOccurrence" | translate:
+              {
+                day: "DaysOfTheWeek" + occurrence.day | translate,
+                hour: occurrence.hour
+              }
+              }}
+            </span>
+          </span><br/>
+          <span>{{"ScheduledGroupClassSummary" | translate : {
+            day: course.start.getDate(),
+            month: "Month" + course.start.getMonth() | translate,
+            price: 666,
+            currency: "Rubles"
+            }
+            }}</span>
+        </li>
+        <div *ngIf="AvailableCourses.length > 0" > {{ "or" | translate}} </div>
+        <li>
+        {{"UnscheduledPrivateClassSummary" | translate : {
+          price: 999,
+          currency: "Rubles"
+        }
+          }}
+        </li>
+
       </ul>
     </div>
   </div>

@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {ChoiceConfig, QuotationService} from '../../services/quotation.service';
-import {IQuotationStep} from "../iquotation-step";
+import {QuotationService} from '../../services/quotation.service';
+import {IQuotationStep} from '../iquotation-step';
+import {ChoiceConfig} from '../../dtos/step-config.dto';
 
 @Component({
   selector: 'pm-quotation-step',
@@ -11,7 +12,6 @@ import {IQuotationStep} from "../iquotation-step";
 export class QuotationQuestionComponent implements IQuotationStep {
 
   constructor(private quotationService: QuotationService) {
-     this.quotationService.setCurrentQuestion(0);
   }
 
   @Output()
@@ -19,10 +19,12 @@ export class QuotationQuestionComponent implements IQuotationStep {
 
   onChooseOption(opt: number) {
     this.quotationService.setCurrentOption(opt);
-    this.quotationService.nextQuestion();
-    if (!this.quotationService.hasQuestionsLeft()) {
-      this.nextStep.emit(0);
-    }
+    this.quotationService.getAvailableCourses().subscribe(result => {
+      this.quotationService.nextQuestion();
+      if (!this.quotationService.hasQuestionsLeft() || result.length === 0) {
+        this.nextStep.emit(0);
+      }
+    });
   }
 
   getCurrentQuestion(): string {

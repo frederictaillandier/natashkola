@@ -1,17 +1,14 @@
 import {Injectable} from '@angular/core';
-import {Router} from '@angular/router';
-import {of} from 'rxjs';
-import {delay} from 'rxjs/operators';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Observable, of, throwError} from 'rxjs';
+import {catchError, delay, filter, map, tap} from 'rxjs/operators';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
+import {ChoiceConfig, StepConfig} from '../dtos/step-config.dto';
+import {CourseDto} from '../dtos/course.dto';
 
-export class ChoiceConfig {
-  imageUrl?: string;
-  name?: string;
-  label: string;
-}
-
-export class StepConfig {
-  question: string;
-  choices: ChoiceConfig[];
+export enum CourseLanguage {
+  French,
+  Spanish
 }
 
 @Injectable({
@@ -21,83 +18,72 @@ export class QuotationService {
   private _currentQuestion = 0;
   private _choices: number[] = [];
   private _loading = false;
+  private _questionSteps: StepConfig[];
 
-  constructor(private router: Router) {
+  private quotationStepsUrl = 'api/quotation/quotation-steps.json';
+  private coursesUrl = 'api/courses/courses.json';
+
+  // Todo: set to proper new file
+  private handleError(err: HttpErrorResponse) {
+    // in a real world app, we may send the server to some remote logging infrastructure
+    // instead of just logging it to the console
+    let errorMessage = '';
+    if (err.error instanceof ErrorEvent) {
+      // A client-side or network error occurred. Handle it accordingly.
+      errorMessage = `An error occurred: ${err.error.message}`;
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong,
+      errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
+    }
+    console.error(errorMessage);
+    return throwError(errorMessage);
   }
 
-  // Todo : set to environements
-  questions: StepConfig[] = [
-    {
-      question: 'QuotationLanguageTitle',
-      choices: [
+  getQuotationSteps(): Observable<StepConfig[]> {
+    return this.http.get<StepConfig[]>(this.quotationStepsUrl)
+      .pipe(
+        tap(data => console.log('All: ' + JSON.stringify(data))),
+        catchError(this.handleError)
+      );
+  }
+
+  // Todo: backend function
+  getAvailableCourses(): Observable<CourseDto[]> {
+    return this.http.get<CourseDto[]>(this.coursesUrl)
+      .pipe(
+        map(data => data.filter(item =>
         {
-          imageUrl: './assets/images/france_logo.png',
-          label: 'French'
-        },
-        {
-          imageUrl: './assets/images/spain_logo.png',
-          label: 'Spanish'
-        }
-      ]
-    },
-    {
-      question: 'QuotationSizeTitle',
-      choices: [
-        {
-          imageUrl: './assets/images/individual_logo.png',
-          label: 'Personal'
-        },
-        {
-          imageUrl: './assets/images/small_group_logo.png',
-          label: 'Small'
-        },
-        {
-          imageUrl: './assets/images/group_logo.png',
-          label: 'Big'
-        }
-      ]
-    },
-    {
-      question: 'QuotationLevelTitle',
-      choices: [
-        {
-          name: 'A1',
-          label: 'Beginner'
-        },
-        {
-          name: 'A2',
-          label: 'UpperBeginner'
-        },
-        {
-          name: 'B1',
-          label: 'Intermediate'
-        },
-        {
-          name: 'B2',
-          label: 'UpperIntermediate'
-        },
-        {
-          name: 'C1',
-          label: 'Advanced'
-        },
-        {
-          name: 'C2',
-          label: 'UpperAdvanced'
-        },
-        {
-          name: '??',
-          label: 'Unknown'
-        }
-      ]
-    }
-  ];
+          for (const [index, value] of this._choices.entries())
+          {
+            if (item[this._questionSteps[index].property] !== this._questionSteps[index].choices[value].label){
+              return false;
+            }
+          }
+          return true;
+        })),
+          catchError(this.handleError)
+      );
+  }
+
+  constructor(private router: Router,
+              private http: HttpClient) {
+    this.getQuotationSteps().subscribe(result => {
+      this._questionSteps = result;
+    });
+  }
+
+  resetChoices() {
+    this._choices = [];
+    this._currentQuestion = 0;
+  }
 
   nextQuestion() {
     ++this._currentQuestion;
   }
 
   hasQuestionsLeft(): boolean {
-    return this._currentQuestion < this.questions.length;
+    return this._currentQuestion < this._questionSteps.length;
   }
 
   setCurrentOption(option: number) {
@@ -105,43 +91,33 @@ export class QuotationService {
   }
 
   getCurrentQuestion(): string {
+    if (!this._questionSteps) {
+      return;
+    }
     if (this.hasQuestionsLeft()) {
-      return this.questions[this._currentQuestion].question;
+      return this._questionSteps[this._currentQuestion].question;
     }
     return null;
-  }
-
-  setCurrentQuestion(index: number) {
-    this._currentQuestion = index;
   }
 
   getCurrentChoiceOptions(): ChoiceConfig[] {
+    if (!this._questionSteps) {
+      return;
+    }
     if (this.hasQuestionsLeft()) {
-      return this.questions[this._currentQuestion].choices;
+      return this._questionSteps[this._currentQuestion].choices;
     }
     return null;
   }
 
-  getFormatedChoices(): ChoiceConfig[]
-  {
+  getFormattedChoices(): ChoiceConfig[] {
     return this._choices.map((choice, index) =>
-      this.questions[index].choices[choice]
+      this._questionSteps[index].choices[choice]
     );
   }
 
   get loading() {
     return this._loading;
-  }
-
-  runQuery() {
-    this._loading = true;
-    // Todo : Interrogate database
-    of('dummy').pipe(delay(3000)).subscribe(
-      x => {
-        this._loading = false;
-        this.router.navigateByUrl('/landing').then();
-      });
-
   }
 }
 

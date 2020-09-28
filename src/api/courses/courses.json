@@ -1,0 +1,70 @@
+[
+  {
+    "level": "A1",
+    "start": "2020-10-01",
+    "end": "2021-06-01",
+    "occurrences": [
+      {
+        "day": 0,
+        "hour": 19
+      },
+      {
+        "day": 4,
+        "hour": 19
+      }
+    ],
+    "language": "Spanish",
+    "groupSize": "Group"
+  },
+  {
+    "level": "A2",
+    "start": "2020-10-01",
+    "end": "2021-06-01",
+    "occurrences": [
+      {
+        "day": 0,
+        "hour": 20.5
+      },
+      {
+        "day": 4,
+        "hour": 20.5
+      }
+    ],
+    "language": "Spanish",
+    "groupSize": "Group"
+  },
+  {
+    "level": "A1",
+    "start": "2020-10-01",
+    "end": "2021-06-01",
+    "occurrences": [
+      {
+        "day": 2,
+        "hour": 19
+      },
+      {
+        "day": 5,
+        "hour": 9
+      }
+    ],
+    "language": "French",
+    "groupSize": "Group"
+  },
+  {
+    "level": "A2",
+    "start": "2020-10-01",
+    "end": "2021-06-01",
+    "occurrences": [
+      {
+        "day": 2,
+        "hour": 20.5
+      },
+      {
+        "day": 5,
+        "hour": 10.5
+      }
+    ],
+    "language": "French",
+    "groupSize": "Group"
+  }
+]

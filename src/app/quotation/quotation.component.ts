@@ -12,6 +12,7 @@ import {QuotationProcessingComponent} from './quotation-processing/quotation-pro
 import {IQuotationStep} from './iquotation-step';
 import {QuotationQuestionComponent} from './quotation-question/quotation-question.component';
 import {QuotationResultComponent} from './quotation-result/quotation-result.component';
+import {Router} from '@angular/router';
 
 @Component({
   templateUrl: './quotation.component.html'
@@ -26,7 +27,8 @@ export class QuotationComponent implements AfterViewInit, OnDestroy {
     QuotationResultComponent];
 
   constructor(private quotationService: QuotationService,
-              private resolver: ComponentFactoryResolver) {
+              private resolver: ComponentFactoryResolver,
+              private router: Router) {
   }
 
   ngAfterViewInit() {
