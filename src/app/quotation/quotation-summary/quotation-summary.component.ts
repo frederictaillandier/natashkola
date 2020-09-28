@@ -14,6 +14,6 @@ export class QuotationSummaryComponent {
   }
 
   getFormattedChoices(): ChoiceConfig[] {
-    return this.quotationService.getFormatedChoices();
+    return this.quotationService.getFormattedChoices();
   }
 }

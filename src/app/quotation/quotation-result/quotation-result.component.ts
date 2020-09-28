@@ -40,13 +40,4 @@ export class QuotationResultComponent implements IQuotationStep {
   get AvailableCourses(): CourseDto[] {
     return this.availableCourses;
   }
-
-  getDate(date: Date): number {
-    return date.getDate();
-  }
-
-  getMonth(date: Date): number {
-    return date.getMonth();
-  }
-
 }

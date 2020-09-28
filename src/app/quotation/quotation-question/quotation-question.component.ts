@@ -12,7 +12,6 @@ import {ChoiceConfig} from '../../dtos/step-config.dto';
 export class QuotationQuestionComponent implements IQuotationStep {
 
   constructor(private quotationService: QuotationService) {
-     this.quotationService.setCurrentQuestion(0);
   }
 
   @Output()
@@ -22,7 +21,7 @@ export class QuotationQuestionComponent implements IQuotationStep {
     this.quotationService.setCurrentOption(opt);
     this.quotationService.getAvailableCourses().subscribe(result => {
       this.quotationService.nextQuestion();
-      if (!this.quotationService.hasQuestionsLeft() || result.length < 0) {
+      if (!this.quotationService.hasQuestionsLeft() || result.length === 0) {
         this.nextStep.emit(0);
       }
     });

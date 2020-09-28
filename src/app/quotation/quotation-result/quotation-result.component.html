@@ -17,12 +17,23 @@
               }}
             </span>
           </span><br/>
-          <span>{{"StartingOn" | translate : {
+          <span>{{"ScheduledGroupClassSummary" | translate : {
             day: course.start.getDate(),
-            month: "Month" + course.start.getMonth() | translate
+            month: "Month" + course.start.getMonth() | translate,
+            price: 666,
+            currency: "Rubles"
             }
             }}</span>
         </li>
+        <div *ngIf="AvailableCourses.length > 0" > {{ "or" | translate}} </div>
+        <li>
+        {{"UnscheduledPrivateClassSummary" | translate : {
+          price: 999,
+          currency: "Rubles"
+        }
+          }}
+        </li>
+
       </ul>
     </div>
   </div>

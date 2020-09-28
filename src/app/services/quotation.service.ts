@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Observable, of, throwError} from 'rxjs';
 import {catchError, delay, filter, map, tap} from 'rxjs/operators';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
@@ -73,6 +73,11 @@ export class QuotationService {
     });
   }
 
+  resetChoices() {
+    this._choices = [];
+    this._currentQuestion = 0;
+  }
+
   nextQuestion() {
     ++this._currentQuestion;
   }
@@ -95,10 +100,6 @@ export class QuotationService {
     return null;
   }
 
-  setCurrentQuestion(index: number) {
-    this._currentQuestion = index;
-  }
-
   getCurrentChoiceOptions(): ChoiceConfig[] {
     if (!this._questionSteps) {
       return;
@@ -109,7 +110,7 @@ export class QuotationService {
     return null;
   }
 
-  getFormatedChoices(): ChoiceConfig[] {
+  getFormattedChoices(): ChoiceConfig[] {
     return this._choices.map((choice, index) =>
       this._questionSteps[index].choices[choice]
     );

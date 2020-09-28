@@ -30,8 +30,9 @@
   "DaysOfTheWeek4": "fridays",
   "DaysOfTheWeek5": "saturdays",
   "DaysOfTheWeek6": "sundays",
-  "CourseOccurrence": "every {{ day }} at {{ hour }}",
+  "CourseOccurrence": "Every {{ day }} at {{ hour }}",
   "And": "and",
+  "Or": "or",
   "Month0": "January",
   "Month1": "February",
   "Month2": "March",
@@ -44,5 +45,6 @@
   "Month9": "October",
   "Month10": "November",
   "Month11": "December",
-  "StartingOn": "Starting on {{ month }}, {{ day }}"
+  "ScheduledGroupClassSummary": "starting on {{ month }}, {{ day }} for only {{ price }} {{ currency }}",
+  "UnscheduledPrivateClassSummary": "Get private classes with our teacher on a custom schedule for {{ price }} {{ currency }}"
 }
