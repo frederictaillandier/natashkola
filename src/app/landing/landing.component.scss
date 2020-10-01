@@ -1,23 +1,18 @@
 .landing {
   background-color: var(--my_cyan);
-  height: 90vh;
-}
+  height: 85vh;
 
-
-.left-picture {
-  padding: 0;
-  overflow: hidden;
-  height: 90vh;
-  img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    mix-blend-mode: multiply;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
   }
+}
+.right-picture{
+  width: auto;
+  height: auto;
+  background-image: url("../../assets/images/landing_side_background2.jpg");
+  background-size: cover;
+  background-position: center;
 }
