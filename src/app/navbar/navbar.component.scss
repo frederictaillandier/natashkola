@@ -1,6 +1,5 @@
 nav {
   background-color: var(--my_cyan);
-
 }
 
 .right-links {
@@ -8,7 +7,10 @@ nav {
   margin-left: auto;
   margin-top: 15px;
 }
+.col {
+  height: 65px;
+}
 
-.title {
-  margin: 15px;
+.centered-vert{
+  margin: auto;
 }

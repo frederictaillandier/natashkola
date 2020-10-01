@@ -1,0 +1,13 @@
+.face {
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+  max-width: 300px;
+  max-height: 300px;
+}
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}

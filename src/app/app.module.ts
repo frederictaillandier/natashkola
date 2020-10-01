@@ -17,6 +17,8 @@ import {QuotationOptionComponent} from './quotation/quotation-question/quotation
 import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation-summary.component';
 import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
 import {QuotationResultComponent} from './quotation/quotation-result/quotation-result.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {PersonCardComponent} from "./about-us/person-card/person-card.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,7 +37,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     QuotationResultComponent,
     LandingComponent,
     LandingTextComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutUsComponent,
+    PersonCardComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       {path: 'welcome', component: WelcomeComponent},
       {path: 'landing', component: LandingComponent},
       {path: 'quotation', component: QuotationComponent},
+      {path: 'about-us', component: AboutUsComponent},
       {path: 'quotation-redirect', component: QuotationProcessingComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}

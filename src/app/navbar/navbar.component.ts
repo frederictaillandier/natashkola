@@ -11,9 +11,11 @@ export class NavbarComponent {
 
   constructor(private router: Router) {
   }
-  showTitle(): boolean{
+
+  showTitle(): boolean {
     return !this.router.url.includes('landing');
   }
+
   get SchoolName() {
     return environment.contact.name;
   }
