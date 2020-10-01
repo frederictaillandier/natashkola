@@ -7,6 +7,7 @@
   --my_forest: #108fa8;
   --my_pink: #f5ccd8;
   --fullwidth: 100%;
+
 }
 
 @font-face {
@@ -36,4 +37,16 @@ h2 {
 h3 {
   color: var(--my_forest);
   font-family: 'script', 'arial', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.empty-row {
+  height: 10vh;
+}
+
+.empty-row-double {
+  height: 20vh;
 }
