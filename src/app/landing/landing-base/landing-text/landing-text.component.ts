@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
-import {environment} from '../../../environments/environment';
-import {QuotationService} from '../../services/quotation.service';
+import {environment} from '../../../../environments/environment';
+import {QuotationService} from '../../../services/quotation.service';
 
 @Component({
   selector: 'pm-landing-text',

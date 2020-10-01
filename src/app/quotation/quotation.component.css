@@ -1,17 +1,6 @@
-.quotation-row {
-  height: 15vh;
-}
-.quotation-row-double {
-  height: 30vh;
-}
-
 h2 {
   margin: 0 auto;
   font-weight: bold;
-}
-
-h3 {
-  text-align: center;
 }
 
 .choice-picture {
