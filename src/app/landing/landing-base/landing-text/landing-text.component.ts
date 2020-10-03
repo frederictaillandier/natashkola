@@ -17,8 +17,4 @@ export class LandingTextComponent {
     this.quotationService.resetChoices();
     this.router.navigateByUrl('/quotation').then();
   }
-
-  get SchoolName() {
-    return environment.contact.name;
-  }
 }

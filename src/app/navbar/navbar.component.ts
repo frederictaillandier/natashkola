@@ -15,8 +15,4 @@ export class NavbarComponent {
   showTitle(): boolean {
     return !this.router.url.includes('landing');
   }
-
-  get SchoolName() {
-    return environment.contact.name;
-  }
 }

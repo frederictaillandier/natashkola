@@ -18,9 +18,12 @@ import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation
 import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
 import {QuotationResultComponent} from './quotation/quotation-result/quotation-result.component';
 import {AboutUsComponent} from './about-us/about-us.component';
-import {PersonCardComponent} from "./about-us/person-card/person-card.component";
-import {LandingBaseComponent} from "./landing/landing-base/landing-base.component";
-import {WhyUsComponent} from "./landing/why-us/why-us.component";
+import {PersonCardComponent} from './about-us/person-card/person-card.component';
+import {LandingBaseComponent} from './landing/landing-base/landing-base.component';
+import {WhyUsComponent} from './landing/why-us/why-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {LanguageSelectionComponent} from "./navbar/language-selection/language-selection.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -43,7 +46,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutUsComponent,
     PersonCardComponent,
     LandingBaseComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    LanguageSelectionComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),
-    ProductModule
+    ProductModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   bootstrap: [AppComponent]
 })

@@ -3,13 +3,14 @@
     <div class="row">
       <div *ngIf="showTitle()" class="title col-auto centered-vert">
         <a class='nav-link centered-vert' [routerLink]="['/landing']">
-          <h1 class='centered-vert'>{{SchoolName}}</h1>
+          <h1 class='centered-vert'>{{'SchoolName'|translate}}</h1>
         </a>
       </div>
       <div class="col"></div>
       <a class='nav-link centered-vert' [routerLink]="['/about-us']">
-        About us
+        {{'AboutUs.AboutUs' | translate }}
       </a>
+      <pm-language-selection class="centered-vert"></pm-language-selection>
     </div>
   </div>
 </nav>

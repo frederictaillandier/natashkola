@@ -38,6 +38,6 @@ export class QuotationResultComponent implements IQuotationStep {
   }
 
   get AvailableCourses(): CourseDto[] {
-    return this.availableCourses;
+    return this.availableCourses ? this.availableCourses : [];
   }
 }
