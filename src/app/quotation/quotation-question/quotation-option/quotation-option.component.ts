@@ -6,7 +6,7 @@ import {ChoiceConfig} from "../../../dtos/step-config.dto";
 @Component({
   selector: 'pm-quotation-option',
   templateUrl: './quotation-option.component.html',
-  styleUrls: ['./quotation-option.component.css',
+  styleUrls: ['./quotation-option.component.scss',
     '../../quotation.component.css']
 })
 export class QuotationOptionComponent {

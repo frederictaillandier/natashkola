@@ -3,16 +3,11 @@ import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'pm-root',
-  template: `
-    <pm-navbar></pm-navbar>
-    <div>
-      <router-outlet></router-outlet>
-    </div>
-  `
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang('ru');
+    translate.use('ru');
   }
 }

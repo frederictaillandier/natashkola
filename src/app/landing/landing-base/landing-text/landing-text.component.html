@@ -1,14 +1,14 @@
 <div class="landing-text">
 
-  <h1>{{ SchoolName }}</h1>
+  <h1>{{ 'SchoolName' | translate }}</h1>
 
-  <h2>{{ 'LandingTitleH4' | translate}}  </h2>
+  <h2>{{ 'Landing.LandingTitle' | translate}}  </h2>
 
   <ul>
-    <li>{{'LandingList1' | translate}}</li>
-    <li>{{'LandingList2' | translate}}</li>
-    <li>{{'LandingList3' | translate}}</li>
-    <li>{{'LandingList4' | translate}}</li>
+    <li>{{'Landing.LandingList1' | translate}}</li>
+    <li>{{'Landing.LandingList2' | translate}}</li>
+    <li>{{'Landing.LandingList3' | translate}}</li>
+    <li>{{'Landing.LandingList4' | translate}}</li>
   </ul>
   <div class="container">
     <div class="row">
@@ -22,6 +22,6 @@
       </div>
       <div class="col-md-2"></div>
     </div>
-    <button (click)="quotationClick()">{{'QuotationButton' | translate}}</button>
+    <button (click)="quotationClick()">{{'Quotation.QuotationButton' | translate}}</button>
   </div>
 </div>

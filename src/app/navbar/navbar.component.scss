@@ -1,5 +1,11 @@
+
+
 nav {
   background-color: var(--my_cyan);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
 }
 
 .right-links {

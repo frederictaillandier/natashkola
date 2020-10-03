@@ -1,63 +1,63 @@
 [
   {
-    "question": "QuotationLanguageTitle",
+    "question": "Quotation.QuotationLanguageTitle",
     "property": "language",
     "choices": [
       {
         "imageUrl": "./assets/images/france_logo.png",
-        "label": "French"
+        "label": "Quotation.French"
       },
       {
         "imageUrl": "./assets/images/spain_logo.png",
-        "label": "Spanish"
+        "label": "Quotation.Spanish"
       }
     ]
   },
   {
-    "question": "QuotationLevelTitle",
+    "question": "Quotation.QuotationLevelTitle",
     "property": "level",
     "choices": [
       {
         "name": "A1",
-        "label": "A1"
+        "label": "Quotation.A1"
       },
       {
         "name": "A2",
-        "label": "A2"
+        "label": "Quotation.A2"
       },
       {
         "name": "B1",
-        "label": "B1"
+        "label": "Quotation.B1"
       },
       {
         "name": "B2",
-        "label": "B2"
+        "label": "Quotation.B2"
       },
       {
         "name": "C1",
-        "label": "C1"
+        "label": "Quotation.C1"
       },
       {
         "name": "C2",
-        "label": "C2"
+        "label": "Quotation.C2"
       },
       {
         "name": "??",
-        "label": "Unknown"
+        "label": "Quotation.Unknown"
       }
     ]
   },
   {
-    "question": "QuotationSizeTitle",
+    "question": "Quotation.QuotationSizeTitle",
     "property": "groupSize",
     "choices": [
       {
         "imageUrl": "./assets/images/individual_logo.png",
-        "label": "Personal"
+        "label": "Quotation.Personal"
       },
       {
         "imageUrl": "./assets/images/small_group_logo.png",
-        "label": "Group"
+        "label": "Quotation.Group"
       }
     ]
   }

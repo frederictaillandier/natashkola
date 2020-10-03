@@ -7,7 +7,7 @@
     "LandingList3": "Fully online, no need to move",
     "LandingList4": "Twice a week for 2 months"
   },
-  "Quotation": {
+  "Quotation" : {
     "Quotation": "Quotation",
     "QuotationButton": "Free quotation",
     "QuotationLanguageTitle": "Which language do you want to learn ?",
@@ -60,24 +60,5 @@
     "FredericName": "Frederic Taillandier",
     "FredericJob": "Teacher and CTO",
     "FredericDesc": "Teaching French online since 2016, and has lived in 5 different countries since 2012, Frederic is also a software engineer and is dedicated to create the best tools to assist language learners. "
-  },
-  "WhyUs":{
-    "WhyUs": "Why us?",
-    "ArgumentTitle1": "Communicative technique",
-    "ArgumentDesc1": "Start speaking from the first lessons.",
-    "ArgumentTitle2": "Motivating atmosphere and constant feed-backs",
-    "ArgumentDesc2": "We are always ready to answer all your questions and fill your knowledge gaps.",
-    "ArgumentTitle3": "Qualified specialists",
-    "ArgumentDesc3": "Linguistic or teacher education. We are in love with foreign languages and are passionate about our business.",
-    "ArgumentTitle4": "Modern technique",
-    "ArgumentDesc4": "We use presentations, scans, audio and video materials, communication games and exercises",
-    "ArgumentTitle5": "A versatile approach",
-    "ArgumentDesc5": "We form in our students all the necessary skills for successful mastering of a foreign language: speaking, listening, reading, grammar, phonetics, vocabulary and writing.",
-    "ArgumentTitle6": "Small groups",
-    "ArgumentDesc6": "You will receive more attention from our experts and you will have more opportunities to practice.",
-    "ArgumentTitle7": "Mobility",
-    "ArgumentDesc7": "You can practice from anywhere in the world. All you need is a computer, tablet or phone and the Internet.",
-    "ArgumentTitle8": "Affordable prices",
-    "ArgumentDesc8": "So, why do you hesitate?"
   }
 }

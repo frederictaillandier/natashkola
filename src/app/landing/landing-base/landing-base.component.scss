@@ -2,7 +2,7 @@
 
 .page {
   background-color: var(--my_cyan);
-
+  padding-top: 65px;
   .container {
     height: 100%;
     .row {
@@ -12,8 +12,9 @@
 }
 
 .right-picture {
+  top: 0px;
+  bottom: 0px;
   width: auto;
-  height: auto;
   background-image: url("../../../assets/images/landing_side_background2.jpg");
   background-size: cover;
   background-position: center;
