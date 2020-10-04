@@ -8,7 +8,7 @@ import {WelcomeComponent} from './home/welcome.component';
 import {ProductModule} from './products/product.module';
 import {LandingComponent} from './landing/landing.component';
 import {NavbarComponent} from './navbar/navbar.component';
-import {LandingTextComponent} from './landing/landing-text/landing-text.component';
+import {LandingTextComponent} from './landing/landing-base/landing-text/landing-text.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {QuotationComponent} from './quotation/quotation.component';
@@ -18,7 +18,12 @@ import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation
 import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
 import {QuotationResultComponent} from './quotation/quotation-result/quotation-result.component';
 import {AboutUsComponent} from './about-us/about-us.component';
-import {PersonCardComponent} from "./about-us/person-card/person-card.component";
+import {PersonCardComponent} from './about-us/person-card/person-card.component';
+import {LandingBaseComponent} from './landing/landing-base/landing-base.component';
+import {WhyUsComponent} from './landing/why-us/why-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {LanguageSelectionComponent} from "./navbar/language-selection/language-selection.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,7 +44,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     LandingTextComponent,
     NavbarComponent,
     AboutUsComponent,
-    PersonCardComponent
+    PersonCardComponent,
+    LandingBaseComponent,
+    WhyUsComponent,
+    LanguageSelectionComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +69,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),
-    ProductModule
+    ProductModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   bootstrap: [AppComponent]
 })

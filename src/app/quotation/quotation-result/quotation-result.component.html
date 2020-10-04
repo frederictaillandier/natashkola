@@ -1,25 +1,25 @@
 <div class="container">
-  <div class="row title quotation-row">
-    <h2>{{"QuotationResultTitle"|translate}}</h2>
+  <div class="row title empty-row">
+    <h2>{{"Quotation.QuotationResultTitle"|translate}}</h2>
   </div>
-  <div class="row title quotation-row-double background-cyan">
+  <div class="row title empty-row-double background-cyan">
     <img class="col-auto" src="./assets/images/quotation_result_side.jpg"/>
     <div class="col">
       <ul>
         <li *ngFor="let course of AvailableCourses">
           <span *ngFor="let occurrence of course.occurrences, let index = index">
             <span *ngIf="index > 0">{{"And" | translate}}&nbsp;</span>
-            <span>{{ "CourseOccurrence" | translate:
+            <span>{{ "Quotation.CourseOccurrence" | translate:
               {
-                day: "DaysOfTheWeek" + occurrence.day | translate,
+                day: "Quotation.DaysOfTheWeek" + occurrence.day | translate,
                 hour: occurrence.hour
               }
               }}
             </span>
           </span><br/>
-          <span>{{"ScheduledGroupClassSummary" | translate : {
+          <span>{{"Quotation.ScheduledGroupClassSummary" | translate : {
             day: course.start.getDate(),
-            month: "Month" + course.start.getMonth() | translate,
+            month: "Quotation.Month" + course.start.getMonth() | translate,
             price: 666,
             currency: "Rubles"
             }
@@ -27,7 +27,7 @@
         </li>
         <div *ngIf="AvailableCourses.length > 0" > {{ "or" | translate}} </div>
         <li>
-        {{"UnscheduledPrivateClassSummary" | translate : {
+        {{"Quotation.UnscheduledPrivateClassSummary" | translate : {
           price: 999,
           currency: "Rubles"
         }
@@ -37,11 +37,11 @@
       </ul>
     </div>
   </div>
-  <div class="row title quotation-row">
+  <div class="row title empty-row">
     <div class="container">
       <div class="col-auto">
         <div class="row">
-          <h2>{{"QuotationCallUs"|translate}}</h2>
+          <h2>{{"Quotation.QuotationCallUs"|translate}}</h2>
         </div>
         <div class="row">
           <h3>{{Mail}}</h3>
