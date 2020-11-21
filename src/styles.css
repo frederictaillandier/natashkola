@@ -6,8 +6,10 @@
   --my_cyan: #b6f7f0ff;
   --my_forest: #108fa8;
   --my_pink: #f5ccd8;
+  --my_orange: #ffa168;
+  --my_orange_dark: #a06541;
+  --my_green: #b7cd96;
   --fullwidth: 100%;
-
 }
 
 @font-face {
@@ -24,8 +26,17 @@
   max-width: 100%;
 }
 
+.page {
+  min-height: 85vh;
+  max-width: 1500px;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
+
 h1 {
-  color: var(--my_forest);
   font-family: 'chunk', 'arial', sans-serif;
   margin: 50px;
 }
@@ -50,6 +61,20 @@ body {
 
 .empty-row-double {
   height: 20vh;
+}
+
+.btn-orange {
+  background-color: var(--my_orange);
+  color: white;
+  border-color: var(--my_orange);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.btn-orange:hover {
+  background-color: var(--my_orange_dark);
+  border-color: var(--my_orange_dark);
 }
 
 html, body { height: 100%; }

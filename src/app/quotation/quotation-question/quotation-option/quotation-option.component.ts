@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {QuotationService} from '../../../services/quotation.service';
-import {ChoiceConfig} from "../../../dtos/step-config.dto";
+import {ChoiceConfig} from '../../../dtos/step-config.dto';
 
 
 @Component({

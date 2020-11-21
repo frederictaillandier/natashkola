@@ -1,16 +1,26 @@
 <nav>
   <div class="container">
     <div class="row">
-      <div *ngIf="showTitle()" class="title col-auto centered-vert">
-        <a class='nav-link centered-vert' [routerLink]="['/landing']">
-          <h1 class='centered-vert'>{{'SchoolName'|translate}}</h1>
+      <div class="title col-auto centered-vert">
+        <a class='centered-vert' [routerLink]="['/landing']">
+          <img class="logo" src="./assets/images/logo.svg">
         </a>
       </div>
       <div class="col"></div>
       <a class='nav-link centered-vert' [routerLink]="['/about-us']">
         {{'AboutUs.AboutUs' | translate }}
       </a>
+      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
+        {{'Courses.Courses' | translate }}
+      </a>
+      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
+        {{'HowToSignUp.HowToSignUp' | translate }}
+      </a>
+      <div class="col"></div>
       <pm-language-selection class="centered-vert"></pm-language-selection>
+      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
+        {{'ContactUs.ContactUs' | translate }}
+      </a>
     </div>
   </div>
 </nav>

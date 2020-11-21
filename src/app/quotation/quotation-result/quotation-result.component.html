@@ -22,12 +22,12 @@
             month: "Quotation.Month" + course.start.getMonth() | translate,
             price: 666,
             currency: "Rubles"
-            }
+          }
             }}</span>
         </li>
-        <div *ngIf="AvailableCourses.length > 0" > {{ "or" | translate}} </div>
+        <div *ngIf="AvailableCourses.length > 0"> {{ "or" | translate}} </div>
         <li>
-        {{"Quotation.UnscheduledPrivateClassSummary" | translate : {
+          {{"Quotation.UnscheduledPrivateClassSummary" | translate : {
           price: 999,
           currency: "Rubles"
         }

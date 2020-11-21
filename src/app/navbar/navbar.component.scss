@@ -1,11 +1,15 @@
 
 
 nav {
-  background-color: var(--my_cyan);
+  background-color: white;
   position: fixed;
   z-index: 100;
   width: 100%;
   top: 0;
+ }
+
+.logo {
+  height: 100px;
 }
 
 .right-links {

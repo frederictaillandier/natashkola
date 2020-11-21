@@ -5,7 +5,23 @@
     "LandingList1": "Affordable classes in small groups or private",
     "LandingList2": "Qualified teacher",
     "LandingList3": "Fully online, no need to move",
-    "LandingList4": "Twice a week for 2 months"
+    "LandingList4": "Twice a week for 2 months",
+    "MainTitle": "An atmosphere of easy and progressive communication",
+    "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Talker communicative method will allow you to start speaking from the very first lesson",
+    "MainButtonFrench": "French language",
+    "MainButtonSpanish": "Spanish language",
+    "ChooseUs": {
+      "Title": "Why choosing us",
+      "Argument1.Title": "Small groups",
+      "Argument1.Description": "You will get more attention from our experts and you will have more opportunities to practice.",
+      "Argument2.Title": "Qualified specialists",
+      "Argument2.Description": "With a linguistic or pedagogical education. We are in love with foreign languages and are passionate about our cause,",
+      "Argument3.Title": "Reasonable prices",
+      "Argument3.Description": "What are you waiting for? Sign up for a free trial lesson.",
+      "Argument4.Title": "Mobility",
+      "Argument4.Description": "You can study from anywhere in the world. All you need is an Internet access and a great mood."
+    }
+
   },
   "Quotation": {
     "Quotation": "Quotation",
@@ -61,6 +77,15 @@
     "FredericJob": "Teacher and CTO",
     "FredericDesc": "Teaching French online since 2016, and has lived in 5 different countries since 2012, Frederic is also a software engineer and is dedicated to create the best tools to assist language learners. "
   },
+  "Courses": {
+    "Courses": "Courses"
+  },
+  "HowToSignUp": {
+    "HowToSignUp": "How to sign up"
+  },
+  "ContactUs": {
+    "ContactUs": "Contact us"
+  },
   "WhyUs":{
     "WhyUs": "Why us?",
     "ArgumentTitle1": "Communicative technique",
@@ -79,5 +104,6 @@
     "ArgumentDesc7": "You can practice from anywhere in the world. All you need is a computer, tablet or phone and the Internet.",
     "ArgumentTitle8": "Affordable prices",
     "ArgumentDesc8": "So, why do you hesitate?"
-  }
+  },
+  "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }

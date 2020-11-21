@@ -23,7 +23,10 @@ import {LandingBaseComponent} from './landing/landing-base/landing-base.componen
 import {WhyUsComponent} from './landing/why-us/why-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {LanguageSelectionComponent} from "./navbar/language-selection/language-selection.component";
+import {LanguageSelectionComponent} from './navbar/language-selection/language-selection.component';
+import {LandingMainComponent} from './landing/landing-main/landing-main.component';
+import {LandingChooseUsComponent} from './landing/landing-choose-us/landing-choose-us.component';
+import {LandingChooseUsItemComponent} from './landing/landing-choose-us/landing-choose-us-item/landing-choose-us-item.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -47,7 +50,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     PersonCardComponent,
     LandingBaseComponent,
     WhyUsComponent,
-    LanguageSelectionComponent
+    LanguageSelectionComponent,
+    LandingMainComponent,
+    LandingChooseUsComponent,
+    LandingChooseUsItemComponent
   ],
   imports: [
     BrowserModule,
