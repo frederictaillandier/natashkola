@@ -5,21 +5,22 @@
 :root {
   --my_cyan: #b6f7f0ff;
   --my_forest: #108fa8;
-  --my_pink: #f5ccd8;
+  --my_pink: #fcf0f3;
   --my_orange: #ffa168;
   --my_orange_dark: #a06541;
   --my_green: #b7cd96;
+  --my_green_transparent: #b7cd9620;
   --fullwidth: 100%;
 }
 
 @font-face {
   font-family: chunk;
-  src: url(./assets/fonts/chunk_five_font.otf) format("opentype");
+  src: url(./assets/fonts/FuturaNewMedium.otf) format("opentype");
 }
 
 @font-face {
   font-family: script;
-  src: url(./assets/fonts/lobster.ttf) format("opentype");
+  src: url(./assets/fonts/FuturaNewMedium.otf) format("opentype");
 }
 
 .container{
@@ -27,7 +28,12 @@
 }
 
 .page {
-  min-height: 85vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+
+}
+
+.module {
   max-width: 1500px;
   margin: auto;
 }
@@ -42,7 +48,6 @@ h1 {
 }
 
 h2 {
-  color: var(--my_pink);
   font-family: 'chunk', 'arial', sans-serif;
 }
 
@@ -52,7 +57,6 @@ h3 {
 }
 
 body {
-  text-align: center;
 }
 
 .empty-row {

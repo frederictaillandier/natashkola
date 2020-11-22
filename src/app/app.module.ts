@@ -27,6 +27,10 @@ import {LanguageSelectionComponent} from './navbar/language-selection/language-s
 import {LandingMainComponent} from './landing/landing-main/landing-main.component';
 import {LandingChooseUsComponent} from './landing/landing-choose-us/landing-choose-us.component';
 import {LandingChooseUsItemComponent} from './landing/landing-choose-us/landing-choose-us-item/landing-choose-us-item.component';
+import {LandingPinkComponent} from "./landing/landing-pink/landing-pink.component";
+import {LandingTeacherComponent} from "./landing/landing-teacher/landing-teacher.component";
+import {LandingRegisterComponent} from "./landing/landing-register/landing-register.component";
+import {FooterComponent} from "./footer/footer.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -53,7 +57,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguageSelectionComponent,
     LandingMainComponent,
     LandingChooseUsComponent,
-    LandingChooseUsItemComponent
+    LandingChooseUsItemComponent,
+    LandingPinkComponent,
+    LandingTeacherComponent,
+    LandingRegisterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -67,11 +75,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'en'
     }),
     RouterModule.forRoot([
-      {path: 'welcome', component: WelcomeComponent},
       {path: 'landing', component: LandingComponent},
-      {path: 'quotation', component: QuotationComponent},
       {path: 'about-us', component: AboutUsComponent},
-      {path: 'quotation-redirect', component: QuotationProcessingComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),

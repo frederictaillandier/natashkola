@@ -20,8 +20,25 @@
       "Argument3.Description": "What are you waiting for? Sign up for a free trial lesson.",
       "Argument4.Title": "Mobility",
       "Argument4.Description": "You can study from anywhere in the world. All you need is an Internet access and a great mood."
+    },
+    "Pink": {
+      "Title": "We erase any boundaries, we break down any barriers",
+      "Description": "Thanks to our communicative method, you will speak in another language from the first session. Constant feed-back and support from our experts, a friendly and motivational atmosphere during our webinars help to prevent all your fears and overcome all the barriers in your learning process."
+    },
+    "Teacher": {
+      "Title": "A language determines our thinking. By learning a foreign language, we acquire a more open mind.",
+      "Name": "Natalia Kanaeva",
+      "Description": "Certified translator of French and Spanish. Leading teacher of the Lingua-Govorun linguistic club, an expert in the field of online education.",
+      "Point1": "Current translator in an embassy",
+      "Point2": "Graduated from the Moscow University and Collège Universitaire Français.",
+      "Point3": "Working professionally as a translator since 2013."
+    },
+    "Register": {
+      "Title": "Start with a free course",
+      "Description": "It's very simple! Give us your phone number or email, and one of our representative will contact you.",
+      "Placeholder": "mail or phone number",
+      "Send": "Send"
     }
-
   },
   "Quotation": {
     "Quotation": "Quotation",
@@ -104,6 +121,10 @@
     "ArgumentDesc7": "You can practice from anywhere in the world. All you need is a computer, tablet or phone and the Internet.",
     "ArgumentTitle8": "Affordable prices",
     "ArgumentDesc8": "So, why do you hesitate?"
+  },
+  "Footer": {
+    "TermsAndConditions": "Terms and conditions",
+    "SiteMap": "Site map"
   },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }

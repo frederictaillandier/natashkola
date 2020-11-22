@@ -7,7 +7,7 @@ export const environment = {
   contact: {
     name: 'Lingua-govorun',
     mail: 'linguagovorun@gmail.com',
-    phone: '555 564654 465'
+    phone: '+7 999 99 99 99'
   }
 };
 
