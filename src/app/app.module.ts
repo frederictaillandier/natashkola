@@ -2,35 +2,18 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
-
 import {AppComponent} from './app.component';
-import {WelcomeComponent} from './home/welcome.component';
-import {ProductModule} from './products/product.module';
-import {LandingComponent} from './landing/landing.component';
-import {NavbarComponent} from './navbar/navbar.component';
-import {LandingTextComponent} from './landing/landing-base/landing-text/landing-text.component';
+import {LandingComponent} from './pages/landing/landing.component';
+import {NavbarComponent} from './header-footer/navbar/navbar.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {QuotationComponent} from './quotation/quotation.component';
-import {QuotationQuestionComponent} from './quotation/quotation-question/quotation-question.component';
-import {QuotationOptionComponent} from './quotation/quotation-question/quotation-option/quotation-option.component';
-import {QuotationSummaryComponent} from './quotation/quotation-summary/quotation-summary.component';
-import {QuotationProcessingComponent} from './quotation/quotation-processing/quotation-processing.component';
-import {QuotationResultComponent} from './quotation/quotation-result/quotation-result.component';
-import {AboutUsComponent} from './about-us/about-us.component';
-import {PersonCardComponent} from './about-us/person-card/person-card.component';
-import {LandingBaseComponent} from './landing/landing-base/landing-base.component';
-import {WhyUsComponent} from './landing/why-us/why-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {LanguageSelectionComponent} from './navbar/language-selection/language-selection.component';
-import {LandingMainComponent} from './landing/landing-main/landing-main.component';
-import {LandingChooseUsComponent} from './landing/landing-choose-us/landing-choose-us.component';
-import {LandingChooseUsItemComponent} from './landing/landing-choose-us/landing-choose-us-item/landing-choose-us-item.component';
-import {LandingPinkComponent} from "./landing/landing-pink/landing-pink.component";
-import {LandingTeacherComponent} from "./landing/landing-teacher/landing-teacher.component";
-import {LandingRegisterComponent} from "./landing/landing-register/landing-register.component";
-import {FooterComponent} from "./footer/footer.component";
+import {LanguageSelectionComponent} from './header-footer/navbar/language-selection/language-selection.component';
+import {FooterComponent} from './header-footer/footer/footer.component';
+import {LandingModule} from './pages/landing/landing.module';
+import {HowToModule} from "./pages/how-to/how-to.module";
+import {HowToComponent} from "./pages/how-to/how-to.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,27 +23,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    QuotationComponent,
-    QuotationQuestionComponent,
-    QuotationOptionComponent,
-    QuotationSummaryComponent,
-    QuotationProcessingComponent,
-    QuotationResultComponent,
-    LandingComponent,
-    LandingTextComponent,
     NavbarComponent,
-    AboutUsComponent,
-    PersonCardComponent,
-    LandingBaseComponent,
-    WhyUsComponent,
     LanguageSelectionComponent,
-    LandingMainComponent,
-    LandingChooseUsComponent,
-    LandingChooseUsItemComponent,
-    LandingPinkComponent,
-    LandingTeacherComponent,
-    LandingRegisterComponent,
     FooterComponent
   ],
   imports: [
@@ -76,13 +40,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     RouterModule.forRoot([
       {path: 'landing', component: LandingComponent},
-      {path: 'about-us', component: AboutUsComponent},
+      {path: 'how-to', component: HowToComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'}
     ]),
-    ProductModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    LandingModule,
+    HowToModule
   ],
   bootstrap: [AppComponent]
 })

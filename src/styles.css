@@ -28,14 +28,18 @@
 }
 
 .page {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
 
+.route {
+  position:relative;
+  padding-top: 100px;
 }
 
 .module {
   max-width: 1500px;
-  margin: auto;
+  margin: 50px auto;
 }
 
 a {

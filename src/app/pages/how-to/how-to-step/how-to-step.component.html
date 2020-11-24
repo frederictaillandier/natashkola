@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img *ngIf="!inverted" class="step-illustration" src="{{imageUrl}}">
+      <div class="text" *ngIf="inverted">
+        <h2>{{title | translate}}</h2>
+        <p>{{description | translate}}</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <pm-how-to-step-number [number]="number" [final]="final"></pm-how-to-step-number>
+    </div>
+    <div class="col-md-5">
+      <img *ngIf="inverted" class="step-illustration" src="{{imageUrl}}">
+      <div *ngIf="!inverted">
+        <h2>{{title | translate}}</h2>
+        <p>{{description | translate}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

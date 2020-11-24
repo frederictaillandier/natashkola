@@ -1,13 +1,8 @@
 {
   "SchoolName": "Lingua-govorun",
   "Landing": {
-    "LandingTitle": "Learn spanish or french online with a fully certified teacher from the comfort of your home",
-    "LandingList1": "Affordable classes in small groups or private",
-    "LandingList2": "Qualified teacher",
-    "LandingList3": "Fully online, no need to move",
-    "LandingList4": "Twice a week for 2 months",
     "MainTitle": "An atmosphere of easy and progressive communication",
-    "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Talker communicative method will allow you to start speaking from the very first lesson",
+    "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Govorun communicative method will allow you to start speaking from the very first lesson",
     "MainButtonFrench": "French language",
     "MainButtonSpanish": "Spanish language",
     "ChooseUs": {
@@ -40,87 +35,45 @@
       "Send": "Send"
     }
   },
-  "Quotation": {
-    "Quotation": "Quotation",
-    "QuotationButton": "Free quotation",
-    "QuotationLanguageTitle": "Which language do you want to learn ?",
-    "French": "French",
-    "Spanish": "Spanish",
-    "QuotationSizeTitle": "Private lesson or groups class ?",
-    "Personal": "Personal",
-    "Group": "Group",
-    "QuotationLevelTitle": "What is your level ?",
-    "A1": "Beginner",
-    "A2": "Upper Beginner",
-    "B1": "Intermediate",
-    "B2": "Upper Intermediate",
-    "C1": "Advanced",
-    "C2": "Upper Advanced",
-    "Unknown": "Unknown",
-    "QuotationProcessing": "Processing...",
-    "QuotationCallUs": "Call us or or email us to book",
-    "QuotationResultTitle": "Next session starts on July 1st",
-    "DaysOfTheWeek0": "mondays",
-    "DaysOfTheWeek1": "tuesdays",
-    "DaysOfTheWeek2": "wednesdays",
-    "DaysOfTheWeek3": "thursdays",
-    "DaysOfTheWeek4": "fridays",
-    "DaysOfTheWeek5": "saturdays",
-    "DaysOfTheWeek6": "sundays",
-    "CourseOccurrence": "Every {{ day }} at {{ hour }}",
-    "And": "and",
-    "Or": "or",
-    "Month0": "January",
-    "Month1": "February",
-    "Month2": "March",
-    "Month3": "April",
-    "Month4": "May",
-    "Month5": "June",
-    "Month6": "July",
-    "Month7": "August",
-    "Month8": "September",
-    "Month9": "October",
-    "Month10": "November",
-    "Month11": "December",
-    "ScheduledGroupClassSummary": "starting on {{ month }}, {{ day }} for only {{ price }} {{ currency }}",
-    "UnscheduledPrivateClassSummary": "Get private classes with our teacher on a custom schedule for {{ price }} {{ currency }}"
-  },
-  "AboutUs": {
-    "AboutUs": "About us",
-    "NataliaName": "Natalia Kanaeva",
-    "NataliaJob": "Teacher and Director",
-    "NataliaDesc": "Expert in online teaching, certified and current translator and interpreter for embassies. Graduated from the Moscow State University and Collège universitaire Français. Teaching since 2013 to students of all ages, including schoolchildren, university students, or professionals from entertainment and fashion industry.",
-    "FredericName": "Frederic Taillandier",
-    "FredericJob": "Teacher and CTO",
-    "FredericDesc": "Teaching French online since 2016, and has lived in 5 different countries since 2012, Frederic is also a software engineer and is dedicated to create the best tools to assist language learners. "
+  "HowTo": {
+    "HowTo": "How to sign up",
+    "Title": "How to subscribe to our courses",
+    "Description": "It's very simple! Follow the steps",
+    "Step1": {
+      "Title": "Send us a request",
+      "Description": "You can send your contact details below in the registration form and a free lesson or just write us a message."
+    },
+    "Step2": {
+      "Title": "A club employee will call you",
+      "Description": "A bit of patience! our representative will call you back within 24 hours to arrange an appointment and make an appointment for the first lesson."
+    },
+    "Step3": {
+      "Title": "Participation in a trial lesson",
+      "Description": "Attention! Payment for the first lesson is not charged. You participate at a convenient time for you."
+    },
+    "Step4": {
+      "Title": "Agreement on the terms of the contract",
+      "Description": "Our representative will call you back within 24 hours to find out your impressions and agree on the terms of the contract."
+    },
+    "Step5": {
+      "Title": "Sign the contract",
+      "Description": "Вы подписываете договор и отправляете его копию нам на e-mail."
+    },
+    "Step6": {
+      "Title": "Make a prepayment for a month",
+      "Description": "You can make a prepayment in any convenient way. All payments are securely protected."
+    },
+    "Step7": {
+      "Title": "Enjoy your classes",
+      "Description": "The club employee directs you to access the conference on the platform. You can start learning."
+    }
   },
   "Courses": {
     "Courses": "Courses"
   },
-  "HowToSignUp": {
-    "HowToSignUp": "How to sign up"
-  },
+
   "ContactUs": {
     "ContactUs": "Contact us"
-  },
-  "WhyUs":{
-    "WhyUs": "Why us?",
-    "ArgumentTitle1": "Communicative technique",
-    "ArgumentDesc1": "Start speaking from the first lessons.",
-    "ArgumentTitle2": "Motivating atmosphere and constant feed-backs",
-    "ArgumentDesc2": "We are always ready to answer all your questions and fill your knowledge gaps.",
-    "ArgumentTitle3": "Qualified specialists",
-    "ArgumentDesc3": "Linguistic or teacher education. We are in love with foreign languages and are passionate about our business.",
-    "ArgumentTitle4": "Modern technique",
-    "ArgumentDesc4": "We use presentations, scans, audio and video materials, communication games and exercises",
-    "ArgumentTitle5": "A versatile approach",
-    "ArgumentDesc5": "We form in our students all the necessary skills for successful mastering of a foreign language: speaking, listening, reading, grammar, phonetics, vocabulary and writing.",
-    "ArgumentTitle6": "Small groups",
-    "ArgumentDesc6": "You will receive more attention from our experts and you will have more opportunities to practice.",
-    "ArgumentTitle7": "Mobility",
-    "ArgumentDesc7": "You can practice from anywhere in the world. All you need is a computer, tablet or phone and the Internet.",
-    "ArgumentTitle8": "Affordable prices",
-    "ArgumentDesc8": "So, why do you hesitate?"
   },
   "Footer": {
     "TermsAndConditions": "Terms and conditions",
