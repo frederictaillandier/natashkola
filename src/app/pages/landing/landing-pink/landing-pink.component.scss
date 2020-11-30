@@ -2,6 +2,13 @@
   padding: 50px;
 }
 
+.img-holder {
+  margin-left: -30%;
+  img {
+    width: 100%;
+  }
+}
+
 .page {
   background-color: var(--my_pink);
 }
