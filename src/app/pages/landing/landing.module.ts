@@ -5,10 +5,10 @@ import {LandingChooseUsComponent} from './landing-choose-us/landing-choose-us.co
 import {LandingChooseUsItemComponent} from './landing-choose-us/landing-choose-us-item/landing-choose-us-item.component';
 import {LandingPinkComponent} from './landing-pink/landing-pink.component';
 import {LandingTeacherComponent} from './landing-teacher/landing-teacher.component';
-import {LandingRegisterComponent} from './landing-register/landing-register.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {SharedModule} from '../../shared/shared.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -21,13 +21,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     LandingChooseUsComponent,
     LandingChooseUsItemComponent,
     LandingPinkComponent,
-    LandingTeacherComponent,
-    LandingRegisterComponent,
+    LandingTeacherComponent
   ],
   exports: [
     LandingComponent
   ],
   imports: [
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

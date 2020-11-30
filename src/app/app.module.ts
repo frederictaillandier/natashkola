@@ -12,8 +12,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {LanguageSelectionComponent} from './header-footer/navbar/language-selection/language-selection.component';
 import {FooterComponent} from './header-footer/footer/footer.component';
 import {LandingModule} from './pages/landing/landing.module';
-import {HowToModule} from "./pages/how-to/how-to.module";
-import {HowToComponent} from "./pages/how-to/how-to.component";
+import {HowToModule} from './pages/how-to/how-to.module';
+import {HowToComponent} from './pages/how-to/how-to.component';
+import {SharedModule} from './shared/shared.module';
+import {CoursesModule} from './pages/courses/courses.module';
+import {CoursesFrenchComponent} from "./pages/courses/french/courses-french.component";
+
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,14 +44,19 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     RouterModule.forRoot([
       {path: 'landing', component: LandingComponent},
+      {path: 'about-us', component: LandingComponent},
       {path: 'how-to', component: HowToComponent},
+      {path: 'french', component: CoursesFrenchComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
-      {path: '**', redirectTo: 'landing', pathMatch: 'full'}
-    ]),
+      {path: '**', redirectTo: 'landing', pathMatch: 'full'},
+    ], {scrollPositionRestoration: 'enabled'}
+    ),
     BrowserAnimationsModule,
+    SharedModule,
     NgbModule,
     LandingModule,
-    HowToModule
+    HowToModule,
+    CoursesModule
   ],
   bootstrap: [AppComponent]
 })

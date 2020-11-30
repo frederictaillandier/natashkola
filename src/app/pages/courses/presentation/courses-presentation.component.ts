@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'pm-courses-presentation',
@@ -6,5 +6,8 @@ import {Component} from '@angular/core';
   templateUrl: './courses-presentation.component.html'
 })
 export class CoursesPresentationComponent {
-
+  @Input()
+  title: string;
+  @Input()
+  description: string;
 }

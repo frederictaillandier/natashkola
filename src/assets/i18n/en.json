@@ -1,6 +1,7 @@
 {
   "SchoolName": "Lingua-govorun",
   "Landing": {
+    "AboutUs": "About Us",
     "MainTitle": "An atmosphere of easy and progressive communication",
     "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Govorun communicative method will allow you to start speaking from the very first lesson",
     "MainButtonFrench": "French language",
@@ -69,7 +70,14 @@
     }
   },
   "Courses": {
-    "Courses": "Courses"
+    "Courses": "Courses",
+    "French": {
+      "French": "French",
+      "Presentation": {
+        "Title": "French language from A1 to the expertise",
+        "Description": "Speaking French has never been so easy! Sign up for a trial lesson and start speaking."
+      }
+    }
   },
 
   "ContactUs": {

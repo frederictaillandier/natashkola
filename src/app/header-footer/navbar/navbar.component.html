@@ -7,12 +7,20 @@
         </a>
       </div>
       <div class="col"></div>
-      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
-        {{'AboutUs.AboutUs' | translate }}
+      <a class='nav-link centered-vert' [routerLink]="['/landing']" [queryParams]="{'component':'aboutus'}" >
+        {{'Landing.AboutUs' | translate }}
       </a>
-      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
+      <div class='nav-link centered-vert dropdown'>
         {{'Courses.Courses' | translate }}
-      </a>
+        <div class="dropdown-content">
+          <a class='nav-link centered-vert' [routerLink]="['/french']">
+            {{'Courses.French.French' | translate }}
+          </a>
+          <a class='nav-link centered-vert' [routerLink]="['/spanish']">
+            {{'Courses.Spanish.Spanish' | translate }}
+          </a>
+        </div>
+      </div>
       <a class='nav-link centered-vert' [routerLink]="['/how-to']">
         {{'HowTo.HowTo' | translate }}
       </a>
