@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'pm-courses-level-item',
@@ -6,5 +6,12 @@ import {Component} from "@angular/core";
   templateUrl: 'courses-level-item.component.html'
 })
 export class CoursesLevelItemComponent {
+  @Input()
+  description: string;
 
+  @Input()
+  circleColor: string;
+
+  @Input()
+  title: string;
 }

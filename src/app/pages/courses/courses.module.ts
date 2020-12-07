@@ -9,6 +9,7 @@ import {SharedModule} from '../../shared/shared.module';
 import {CoursesVideoHolderComponent} from './video-holder/courses-video-holder.component';
 import {CoursesPricesComponent} from './prices/courses-prices.component';
 import {CoursesLevelItemComponent} from './level/item/courses-level-item.component';
+import {CoursesSpanishComponent} from './spanish/courses-spanish.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -17,6 +18,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     CoursesFrenchComponent,
+    CoursesSpanishComponent,
     CoursesPresentationComponent,
     CoursesLevelComponent,
     CoursesVideoHolderComponent,

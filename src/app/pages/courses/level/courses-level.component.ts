@@ -6,4 +6,11 @@ import {Component} from '@angular/core';
   templateUrl: './courses-level.component.html'
 })
 export class CoursesLevelComponent {
+
+
+  public setMyClass() {
+    return {
+      circle: true
+    };
+  }
 }

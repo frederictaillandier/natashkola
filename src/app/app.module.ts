@@ -17,6 +17,7 @@ import {HowToComponent} from './pages/how-to/how-to.component';
 import {SharedModule} from './shared/shared.module';
 import {CoursesModule} from './pages/courses/courses.module';
 import {CoursesFrenchComponent} from "./pages/courses/french/courses-french.component";
+import {CoursesSpanishComponent} from "./pages/courses/spanish/courses-spanish.component";
 
 
 // AoT requires an exported function for factories
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       {path: 'about-us', component: LandingComponent},
       {path: 'how-to', component: HowToComponent},
       {path: 'french', component: CoursesFrenchComponent},
+      {path: 'spanish', component: CoursesSpanishComponent},
       {path: '', redirectTo: 'landing', pathMatch: 'full'},
       {path: '**', redirectTo: 'landing', pathMatch: 'full'},
     ], {scrollPositionRestoration: 'enabled'}

@@ -10,4 +10,6 @@ export class CoursesPresentationComponent {
   title: string;
   @Input()
   description: string;
+  @Input()
+  image: string;
 }

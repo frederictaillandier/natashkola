@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StarComponent } from './star.component';
 import { FormsModule } from '@angular/forms';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
@@ -13,7 +12,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    StarComponent,
     RegisterComponent
   ],
   imports: [
@@ -29,7 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   exports: [
-    StarComponent,
     RegisterComponent,
     CommonModule,
     FormsModule

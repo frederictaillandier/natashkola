@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="circle">
-      <span>A1</span>
+    <div class="circle" [style.background-color]="circleColor">
+      <span>{{ title | translate }}</span>
     </div>
   </div>
   <div class="row">
-    Level elementary
+    {{ description | translate }}
   </div>
 </div>

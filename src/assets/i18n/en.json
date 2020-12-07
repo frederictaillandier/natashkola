@@ -77,6 +77,38 @@
         "Title": "French language from A1 to the expertise",
         "Description": "Speaking French has never been so easy! Sign up for a trial lesson and start speaking."
       }
+    },
+    "Spanish": {
+      "Spanish": "Spanish",
+      "Presentation": {
+        "Title": "Spanish language from A1 to the expertise",
+        "Description": "Speaking Spanish has never been so easy! Sign up for a trial lesson and start speaking."
+      }
+    },
+    "Proficiency": {
+      "Title" : "Language proficiency",
+      "Levels": {
+        "A1": {
+          "Title": "A1",
+          "Description": "Elementary Level"
+        },
+        "A2": {
+          "Title": "A2",
+          "Description": "Upper Elementary Level"
+        },
+        "B1": {
+          "Title": "B1",
+          "Description": "Intermediate Level"
+        },
+        "B2": {
+          "Title": "B2",
+          "Description": "Upper Intermediate Level"
+        },
+        "?": {
+          "Title": "?",
+          "Description": "I don't know my level"
+        }
+      }
     }
   },
 

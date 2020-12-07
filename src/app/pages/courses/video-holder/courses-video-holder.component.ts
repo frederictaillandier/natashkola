@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'pm-courses-video-holder',
@@ -6,5 +6,6 @@ import {Component} from '@angular/core';
   templateUrl: './courses-video-holder.component.html'
 })
 export class CoursesVideoHolderComponent {
-
+  @Input()
+  image: string;
 }
