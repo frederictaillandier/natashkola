@@ -42,6 +42,7 @@ jobs:
             password: ${{ secrets.PASSWORD }}
             port: 22
             script: ./deploy-scripts/natashkola/build.sh
+            command_timeout: "30m"
         - name: dockerize
           uses: appleboy/ssh-action@master
           with:
