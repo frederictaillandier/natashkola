@@ -22,14 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HowToComponent
   ],
   imports: [
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      },
-      defaultLanguage: 'en'
-    }),
+    TranslateModule,
     SharedModule,
     CommonModule,
   ]

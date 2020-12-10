@@ -29,14 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
     imports: [
         SharedModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            },
-            defaultLanguage: 'en'
-        }),
+        TranslateModule,
         RouterModule,
     ]
 })

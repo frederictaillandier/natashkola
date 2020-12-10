@@ -9,13 +9,49 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
-        - name: executing remote ssh commands using password
+        - name: clean all
           uses: appleboy/ssh-action@master
           with:
             host: ${{ secrets.HOST }}
             username: fred
             password: ${{ secrets.PASSWORD }}
             port: 22
-            script: ./deploydev.sh
+            script: ./deploy-scripts/natashkola/clean-all.sh
+        - name: clone
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.HOST }}
+            username: fred
+            password: ${{ secrets.PASSWORD }}
+            port: 22
+            script: ./deploy-scripts/natashkola/clone.sh
+        - name: pulldev
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.HOST }}
+            username: fred
+            password: ${{ secrets.PASSWORD }}
+            port: 22
+            script: ./deploy-scripts/natashkola/pulldev.sh
+        - name: build
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.HOST }}
+            username: fred
+            password: ${{ secrets.PASSWORD }}
+            port: 22
+            script: ./deploy-scripts/natashkola/build.sh
+        - name: dockerize
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.HOST }}
+            username: fred
+            password: ${{ secrets.PASSWORD }}
+            port: 22
+            script: ./deploy-scripts/natashkola/dockerize.sh
+
+
+
+
+

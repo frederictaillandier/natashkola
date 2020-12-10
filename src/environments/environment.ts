@@ -8,7 +8,8 @@ export const environment = {
     name: 'Lingua-govorun',
     mail: 'linguagovorun@gmail.com',
     phone: '+7 999 99 99 99'
-  }
+  },
+  facebook: 'https://www.facebook.com/linguagovorun'
 };
 
 /*

@@ -1,83 +1,123 @@
 {
-  "SchoolName": "Lingua-говорун",
+  "SchoolName": "Lingua-govorun",
   "Landing": {
-    "LandingTitle": "Учите испанский или французский онлайн с сертифицированным учителем, не выходя из дома",
-    "LandingList1": "Affordable classes in small groups or private",
-    "LandingList2": "Qualified teacher",
-    "LandingList3": "Fully online, no need to move",
-    "LandingList4": "Twice a week for 2 months"
+    "AboutUs": "About UsRU",
+    "MainTitle": "An atmosphere of easy and progressive communication",
+    "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Govorun communicative method will allow you to start speaking from the very first lesson",
+    "MainButtonFrench": "French language",
+    "MainButtonSpanish": "Spanish language",
+    "ChooseUs": {
+      "Title": "Why choosing us",
+      "Argument1.Title": "Small groups",
+      "Argument1.Description": "You will get more attention from our experts and you will have more opportunities to practice.",
+      "Argument2.Title": "Qualified specialists",
+      "Argument2.Description": "With a linguistic or pedagogical education. We are in love with foreign languages and are passionate about our cause,",
+      "Argument3.Title": "Reasonable prices",
+      "Argument3.Description": "What are you waiting for? Sign up for a free trial lesson.",
+      "Argument4.Title": "Mobility",
+      "Argument4.Description": "You can study from anywhere in the world. All you need is an Internet access and a great mood."
+    },
+    "Pink": {
+      "Title": "We erase any boundaries, we break down any barriers",
+      "Description": "Thanks to our communicative method, you will speak in another language from the first session. Constant feed-back and support from our experts, a friendly and motivational atmosphere during our webinars help to prevent all your fears and overcome all the barriers in your learning process."
+    },
+    "Teacher": {
+      "Title": "A language determines our thinking. By learning a foreign language, we acquire a more open mind.",
+      "Name": "Natalia Kanaeva",
+      "Description": "Certified translator of French and Spanish. Leading teacher of the Lingua-Govorun linguistic club, an expert in the field of online education.",
+      "Point1": "Current translator in an embassy",
+      "Point2": "Graduated from the Moscow University and Collège Universitaire Français.",
+      "Point3": "Working professionally as a translator since 2013."
+    },
+    "Register": {
+      "Title": "Start with a free course",
+      "Description": "It's very simple! Give us your phone number or email, and one of our representative will contact you.",
+      "Placeholder": "mail or phone number",
+      "Send": "Send"
+    }
   },
-  "Quotation": {
-    "Quotation": "Смета",
-    "QuotationButton": "Бесплатная смета",
-    "QuotationLanguageTitle": "Какой язык вы хотите выучить?",
-    "French": "Французский",
-    "Spanish": "Испанский",
-    "QuotationSizeTitle": "Частной урок или групповой урок?",
-    "Personal": "Частной",
-    "Group": "Групповой",
-    "QuotationLevelTitle": "Какой у вас уровень?",
-    "A1": "Новичок",
-    "A2": "Верхний Новичок",
-    "B1": "Intermediate",
-    "B2": "Верхний Intermediate",
-    "C1": "Advanced",
-    "C2": "Верхний Advanced",
-    "Unknown": "Unknown",
-    "QuotationProcessing": "Загрузка...",
-    "QuotationCallUs": "Call us or or email us to book",
-    "QuotationResultTitle": "Next session starts on July 1st",
-    "DaysOfTheWeek0": "mondays",
-    "DaysOfTheWeek1": "tuesdays",
-    "DaysOfTheWeek2": "wednesdays",
-    "DaysOfTheWeek3": "thursdays",
-    "DaysOfTheWeek4": "fridays",
-    "DaysOfTheWeek5": "saturdays",
-    "DaysOfTheWeek6": "sundays",
-    "CourseOccurrence": "Every {{ day }} at {{ hour }}",
-    "And": "and",
-    "Or": "or",
-    "Month0": "January",
-    "Month1": "February",
-    "Month2": "March",
-    "Month3": "April",
-    "Month4": "May",
-    "Month5": "June",
-    "Month6": "July",
-    "Month7": "August",
-    "Month8": "September",
-    "Month9": "October",
-    "Month10": "November",
-    "Month11": "December",
-    "ScheduledGroupClassSummary": "starting on {{ month }}, {{ day }} for only {{ price }} {{ currency }}",
-    "UnscheduledPrivateClassSummary": "Get private classes with our teacher on a custom schedule for {{ price }} {{ currency }}"
+  "HowTo": {
+    "HowTo": "How to sign up",
+    "Title": "How to subscribe to our courses",
+    "Description": "It's very simple! Follow the steps",
+    "Step1": {
+      "Title": "Send us a request",
+      "Description": "You can send your contact details below in the registration form and a free lesson or just write us a message."
+    },
+    "Step2": {
+      "Title": "A club employee will call you",
+      "Description": "A bit of patience! our representative will call you back within 24 hours to arrange an appointment and make an appointment for the first lesson."
+    },
+    "Step3": {
+      "Title": "Participation in a trial lesson",
+      "Description": "Attention! Payment for the first lesson is not charged. You participate at a convenient time for you."
+    },
+    "Step4": {
+      "Title": "Agreement on the terms of the contract",
+      "Description": "Our representative will call you back within 24 hours to find out your impressions and agree on the terms of the contract."
+    },
+    "Step5": {
+      "Title": "Sign the contract",
+      "Description": "Вы подписываете договор и отправляете его копию нам на e-mail."
+    },
+    "Step6": {
+      "Title": "Make a prepayment for a month",
+      "Description": "You can make a prepayment in any convenient way. All payments are securely protected."
+    },
+    "Step7": {
+      "Title": "Enjoy your classes",
+      "Description": "The club employee directs you to access the conference on the platform. You can start learning."
+    }
   },
-  "AboutUs": {
-    "AboutUs": "О нас",
-    "NataliaName": "Наталия Канаева",
-    "NataliaJob": "Учитель и Директор",
-    "NataliaDesc": "Эксперт в онлайн-обученииДипломированный и действующий переводчик в посольстве. Выпускница МГУ и Collège Universitaire Français. Преподаю с 2013 года. Ученики 7-50 лет, среди которых школьники, студенты, деятели искусства и fashion-индустрии.",
-    "FredericName": "Фредерик Тайандие",
-    "FredericJob": "Учитель и Технический директор",
-    "FredericDesc": "Teaching French online since 2016, and has lived in 5 different countries since 2012, Frederic is also a software engineer and is dedicated to create the best tools to assist language learners."
+  "Courses": {
+    "Courses": "Courses",
+    "French": {
+      "French": "French",
+      "Presentation": {
+        "Title": "French language from A1 to the expertise",
+        "Description": "Speaking French has never been so easy! Sign up for a trial lesson and start speaking."
+      }
+    },
+    "Spanish": {
+      "Spanish": "Spanish",
+      "Presentation": {
+        "Title": "Spanish language from A1 to the expertise",
+        "Description": "Speaking Spanish has never been so easy! Sign up for a trial lesson and start speaking."
+      }
+    },
+    "Proficiency": {
+      "Title" : "Language proficiency",
+      "Levels": {
+        "A1": {
+          "Title": "A1",
+          "Description": "Elementary Level"
+        },
+        "A2": {
+          "Title": "A2",
+          "Description": "Upper Elementary Level"
+        },
+        "B1": {
+          "Title": "B1",
+          "Description": "Intermediate Level"
+        },
+        "B2": {
+          "Title": "B2",
+          "Description": "Upper Intermediate Level"
+        },
+        "?": {
+          "Title": "?",
+          "Description": "I don't know my level"
+        }
+      }
+    }
   },
-  "WhyUs":{
-    "WhyUs": "Почему мы?",
-    "ArgumentTitle1": "Коммуникативная методика",
-    "ArgumentDesc1": "Начните говорить с первых занятий.",
-    "ArgumentTitle2": "Мотивирующая атмосфера и постоянный feed-back",
-    "ArgumentDesc2": "Мы всегда готовы ответить на все ваши вопросы и восполнить выши пробелы в знаниях.",
-    "ArgumentTitle3": "Квалифицированные специалисты",
-    "ArgumentDesc3": "Лингвистическое или педагогическое образование. Мы влюблены в иностанные языки и увлечены нашим делом.",
-    "ArgumentTitle4": "Современная методика",
-    "ArgumentDesc4": "Мы используем презентации, сканы, аудио- и видео-материалы, коммуникативные игры и упражнения.",
-    "ArgumentTitle5": "Разносторонний подход",
-    "ArgumentDesc5": "Мы формируем у наших студентов все необходимые навыки для успешного овладения иностранным языком: говорение, аудирование, чтение, грамматика, фонетика, лексика и письмо.",
-    "ArgumentTitle6": "Маленькие группы",
-    "ArgumentDesc6": "Вы получите больше внимания от наших экспертов и будете иметь больше возможностей для практики.",
-    "ArgumentTitle7": "Мобильность",
-    "ArgumentDesc7": "Вы можете заниматься из любой точки мира. Понадобится лишь компьютер, планшет или телефон и интернет.",
-    "ArgumentTitle8": "Доступные цены",
-    "ArgumentDesc8": "ну почему стесняться?"
-  }
+
+  "ContactUs": {
+    "ContactUs": "Contact us"
+  },
+  "Footer": {
+    "TermsAndConditions": "Terms and conditions",
+    "SiteMap": "Site map"
+  },
+  "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }
