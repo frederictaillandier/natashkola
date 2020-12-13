@@ -74,50 +74,50 @@
     "French": {
       "French": "Французский язык",
       "Presentation": {
-        "Title": "French language from A1 to the expertise",
-        "Description": "Speaking French has never been so easy! Sign up for a trial lesson and start speaking."
+        "Title": "Французский язык от А1 до эксперта",
+        "Description": "Разговаривать на французском языке еще не было так просто! Записывайся на пробное занятие и начинай общаться."
       }
     },
     "Spanish": {
       "Spanish": "Испанский язык",
       "Presentation": {
-        "Title": "Spanish language from A1 to the expertise",
-        "Description": "Speaking Spanish has never been so easy! Sign up for a trial lesson and start speaking."
+        "Title": "Испанский язык от А1 до эксперта",
+        "Description": "Разговаривать на испанском языке еще не было так просто! Записывайся на пробное занятие и начинай общаться."
       }
     },
     "Proficiency": {
-      "Title" : "Language proficiency",
+      "Title" : "Уровни владения языком",
       "Levels": {
         "A1": {
           "Title": "A1",
-          "Description": "Elementary Level"
+          "Description": "Начальный уровень"
         },
         "A2": {
           "Title": "A2",
-          "Description": "Upper Elementary Level"
+          "Description": "Элементарный уровень"
         },
         "B1": {
           "Title": "B1",
-          "Description": "Intermediate Level"
+          "Description": "Средний уровень"
         },
         "B2": {
           "Title": "B2",
-          "Description": "Upper Intermediate Level"
+          "Description": "Продвинутый уровень"
         },
         "?": {
           "Title": "?",
-          "Description": "I don't know my level"
+          "Description": "Я не знаю свой уровень"
         }
       }
     }
   },
 
   "ContactUs": {
-    "ContactUs": "Contact us"
+    "ContactUs": "Отправить сообщение"
   },
   "Footer": {
-    "TermsAndConditions": "Terms and conditions",
-    "SiteMap": "Site map"
+    "TermsAndConditions": "Политика конфиденциальности",
+    "SiteMap": "Карта сайта"
   },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }
