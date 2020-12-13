@@ -1,25 +1,25 @@
 {
   "SchoolName": "Lingua-govorun",
   "Landing": {
-    "AboutUs": "About UsRU",
-    "MainTitle": "Русский An atmosphere of easy and progressive communication",
-    "MainDescription": "Sign up for a linguistic club and learn foreign languages by communicating. The Lingua Govorun communicative method will allow you to start speaking from the very first lesson",
-    "MainButtonFrench": "French language",
-    "MainButtonSpanish": "Spanish language",
+    "AboutUs": "О нас",
+    "MainTitle": "Атмосфера легкого и прогрессивного общения",
+    "MainDescription": "Записывайтесь в лингвистический клуб и изучай иностранные языки обаясь. Lingua Говорун позволит тебе начать говорить уже с первого занятия.",
+    "MainButtonFrench": "Французский язык",
+    "MainButtonSpanish": "Испанский язык",
     "ChooseUs": {
-      "Title": "Why choosing us",
-      "Argument1.Title": "Small groups",
-      "Argument1.Description": "You will get more attention from our experts and you will have more opportunities to practice.",
-      "Argument2.Title": "Qualified specialists",
-      "Argument2.Description": "With a linguistic or pedagogical education. We are in love with foreign languages and are passionate about our cause,",
-      "Argument3.Title": "Reasonable prices",
-      "Argument3.Description": "What are you waiting for? Sign up for a free trial lesson.",
-      "Argument4.Title": "Mobility",
-      "Argument4.Description": "You can study from anywhere in the world. All you need is an Internet access and a great mood."
+      "Title": "Почему нас выбирают",
+      "Argument1.Title": "Маленькие группы",
+      "Argument1.Description": "Вы получите больше внимания от наших экспертов и будете иметь больше возможностей для практики.",
+      "Argument2.Title": "Квалифицированные специалисты",
+      "Argument2.Description": "Лингвистическое или педагогическое образование. Мы влюблены в иностранные языки и увлечены нашим делом.",
+      "Argument3.Title": "Доступные цены",
+      "Argument3.Description": "Чего же вы ждёте? Записывайтесь на бесплатное пробное занятие!",
+      "Argument4.Title": "Мобильность",
+      "Argument4.Description": "Вы можете заниматься из любой точки мира. Понадобится лишь доступ в интернет и отличное настроение."
     },
     "Pink": {
-      "Title": "We erase any boundaries, we break down any barriers",
-      "Description": "Thanks to our communicative method, you will speak in another language from the first session. Constant feed-back and support from our experts, a friendly and motivational atmosphere during our webinars help to prevent all your fears and overcome all the barriers in your learning process."
+      "Title": "Стираем любые границы, рушим любые барьеры",
+      "Description": ""
     },
     "Teacher": {
       "Title": "A language determines our thinking. By learning a foreign language, we acquire a more open mind.",
