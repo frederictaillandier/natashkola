@@ -3,7 +3,7 @@
   "Landing": {
     "AboutUs": "О нас",
     "MainTitle": "Атмосфера легкого и прогрессивного общения",
-    "MainDescription": "Записывайтесь в лингвистический клуб и изучай иностранные языки обаясь. Lingua Говорун позволит тебе начать говорить уже с первого занятия.",
+    "MainDescription": "Записывайтесь в лингвистический клуб и изучай иностранные языки обoаясь. Lingua Говорун позволит тебе начать говорить уже с первого занятия.",
     "MainButtonFrench": "Французский язык",
     "MainButtonSpanish": "Испанский язык",
     "ChooseUs": {
@@ -38,35 +38,35 @@
   },
   "HowTo": {
     "HowTo": "Как записаться",
-    "Title": "How to subscribe to our courses",
-    "Description": "It's very simple! Follow the steps",
+    "Title": "Как записаться на языковой курс",
+    "Description": "Всё просто! Следуйте инструкции",
     "Step1": {
-      "Title": "Send us a request",
-      "Description": "You can send your contact details below in the registration form and a free lesson or just write us a message."
+      "Title": "Отправьте нам заявку",
+      "Description": "Вы можете оставить свои контактные данные ниже в форме записи на первое и бесплатное занятие или просто написать нам сообщение."
     },
     "Step2": {
-      "Title": "A club employee will call you",
-      "Description": "A bit of patience! our representative will call you back within 24 hours to arrange an appointment and make an appointment for the first lesson."
+      "Title": "Вам перезвонит сотрудник клуба",
+      "Description": "Капельку терпения! Наш представитель позвонит вам в течении 24 часов, чтобы договориться о времени и записать на первое занятие."
     },
     "Step3": {
-      "Title": "Participation in a trial lesson",
-      "Description": "Attention! Payment for the first lesson is not charged. You participate at a convenient time for you."
+      "Title": "Участие в пробном занятии",
+      "Description": "Внимание! Оплата за первое занятие не взимается."
     },
     "Step4": {
-      "Title": "Agreement on the terms of the contract",
-      "Description": "Our representative will call you back within 24 hours to find out your impressions and agree on the terms of the contract."
+      "Title": "Согласование условий договора",
+      "Description": "Наш представитель перезвонит вам в течение 24 часов для того, чтобы узнать ваши впечатления и согласовать условия договора."
     },
     "Step5": {
-      "Title": "Sign the contract",
+      "Title": "Подпишите договор",
       "Description": "Вы подписываете договор и отправляете его копию нам на e-mail."
     },
     "Step6": {
-      "Title": "Make a prepayment for a month",
-      "Description": "You can make a prepayment in any convenient way. All payments are securely protected."
+      "Title": "Внесите предоплату за месяц",
+      "Description": "Вы можете внести предоплату любым удобным способом. Все платежи надежно защищены."
     },
     "Step7": {
-      "Title": "Enjoy your classes",
-      "Description": "The club employee directs you to access the conference on the platform. You can start learning."
+      "Title": "Получение доступа к занятиям",
+      "Description": "Сотрудники клуба отправят вам доступ к конференции на платформе Zoom. Вы можете приступить к звнятиям."
     }
   },
   "Courses": {
