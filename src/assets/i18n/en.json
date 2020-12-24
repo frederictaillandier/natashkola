@@ -109,9 +109,26 @@
           "Description": "I don't know my level"
         }
       }
+    },
+    "HowIsOrganized": {
+      "Title": "How is organized a course at Lingua Govorun",
+      "Description": "We provide individual and group lessons. lessons are held in the format of a video conference on the platform Zoom"
+    },
+    "Prices": {
+      "Title": "Skill available to all",
+      "SubTitle": "Courses tarification",
+      "Individual": {
+        "Title": "Individual class (60 min)",
+        "One": "1 class - 800 rubles",
+        "Package": "3 months - 6400 rubles"
+      },
+      "Group": {
+        "Title": "Group class (60 min, 3-5 people)",
+        "One": "1 class - 350 rubles",
+        "Package": "3 months - 2800 rubles"
+      }
     }
   },
-
   "ContactUs": {
     "ContactUs": "Contact us"
   },

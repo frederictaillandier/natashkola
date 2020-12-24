@@ -15,4 +15,8 @@ export class FooterComponent {
     return environment.contact.mail;
   }
 
+  get Facebook(): string {
+    return environment.facebook;
+  }
+
 }

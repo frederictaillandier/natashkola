@@ -109,6 +109,10 @@
           "Description": "Я не знаю свой уровень"
         }
       }
+    },
+    "HowIsOrganized": {
+      "Title": "How is organized a course at Lingua Govorun",
+      "Description": "We provide individual and group lessons. lessons are held in the format of a video conference on the platform Zoom"
     }
   },
 
