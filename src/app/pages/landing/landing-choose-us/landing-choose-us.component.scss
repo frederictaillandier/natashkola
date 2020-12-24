@@ -1,0 +1,26 @@
+.background1 {
+  background-color: var(--my_green_transparent);
+  border-radius: 50%;
+}
+
+.background2 {
+  background-color: var(--my_green_transparent);
+  border-radius: 50% / 100%;
+}
+
+.page {
+  text-align: center;
+}
+
+.module {
+  margin: auto;
+  height: 100%;
+}
+
+.content {
+  padding: 5% 10%;
+}
+
+h2 {
+  text-align: center;
+}

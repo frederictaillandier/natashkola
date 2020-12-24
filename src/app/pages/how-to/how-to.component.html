@@ -1,0 +1,15 @@
+<div class="route">
+    <h2>{{'HowTo.Title' | translate }}</h2>
+    <p>{{'HowTo.Description' | translate }}</p>
+    <pm-how-to-step *ngFor="let number of [1,2,3,4,5,6,7]"
+                    [number]="number"
+                    [final]="number === 7"
+                    [inverted]="number%2===0"
+                    [title]="'HowTo.Step' + number + '.Title'"
+                    [description]="'HowTo.Step' + number + '.Description'"
+                    [imageUrl]="'/assets/images/pages/how-to/how_to_step'+ (number!=4?number:2) + '.svg'">
+
+    </pm-how-to-step>
+    <pm-register></pm-register>
+
+</div>

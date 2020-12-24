@@ -1,0 +1,64 @@
+[
+  {
+    "question": "Quotation.QuotationLanguageTitle",
+    "property": "language",
+    "choices": [
+      {
+        "imageUrl": "./assets/images/france_logo.png",
+        "label": "Quotation.French"
+      },
+      {
+        "imageUrl": "./assets/images/spain_logo.png",
+        "label": "Quotation.Spanish"
+      }
+    ]
+  },
+  {
+    "question": "Quotation.QuotationLevelTitle",
+    "property": "level",
+    "choices": [
+      {
+        "name": "A1",
+        "label": "Quotation.A1"
+      },
+      {
+        "name": "A2",
+        "label": "Quotation.A2"
+      },
+      {
+        "name": "B1",
+        "label": "Quotation.B1"
+      },
+      {
+        "name": "B2",
+        "label": "Quotation.B2"
+      },
+      {
+        "name": "C1",
+        "label": "Quotation.C1"
+      },
+      {
+        "name": "C2",
+        "label": "Quotation.C2"
+      },
+      {
+        "name": "??",
+        "label": "Quotation.Unknown"
+      }
+    ]
+  },
+  {
+    "question": "Quotation.QuotationSizeTitle",
+    "property": "groupSize",
+    "choices": [
+      {
+        "imageUrl": "./assets/images/individual_logo.png",
+        "label": "Quotation.Personal"
+      },
+      {
+        "imageUrl": "./assets/images/small_group_logo.png",
+        "label": "Quotation.Group"
+      }
+    ]
+  }
+]

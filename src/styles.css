@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+:root {
+  --my_cyan: #b6f7f0ff;
+  --my_forest: #108fa8;
+  --my_pink: #fcf0f3;
+  --my_orange: #ffa168;
+  --my_orange_dark: #a06541;
+  --my_green: #b7cd96;
+  --my_green_transparent: #b7cd9620;
+  --fullwidth: 100%;
+}
+
+@font-face {
+  font-family: chunk;
+  src: url(./assets/fonts/FuturaNewMedium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: script;
+  src: url(./assets/fonts/FuturaNewMedium.otf) format("opentype");
+}
+
+.container{
+  max-width: 100%;
+}
+
+.page {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.route {
+  position:relative;
+  margin-top: 100px;
+}
+
+.module {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-family: 'chunk', 'arial', sans-serif;
+  margin: 50px;
+}
+
+h2 {
+  font-family: 'chunk', 'arial', sans-serif;
+}
+
+h3 {
+  color: var(--my_forest);
+  font-family: 'script', 'arial', sans-serif;
+}
+
+body {
+}
+
+.empty-row {
+  height: 10vh;
+}
+
+.empty-row-double {
+  height: 20vh;
+}
+
+.btn-orange {
+  background-color: var(--my_orange);
+  color: white;
+  border-color: var(--my_orange);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.btn-orange:hover {
+  background-color: var(--my_orange_dark);
+  border-color: var(--my_orange_dark);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

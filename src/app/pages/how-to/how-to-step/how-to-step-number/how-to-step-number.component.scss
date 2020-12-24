@@ -1,0 +1,26 @@
+.circle {
+  background-color: rgb(251, 249, 248);
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px 0px rgba(182, 220, 225, 0.23),0px 19px 13px 0px rgba(182, 220, 225, 0.16),0px 12px 27px 0px rgba(182, 220, 225, 0.42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  margin-top: 20%;
+  h2 {
+    color: #bac4c2;
+    margin: auto;
+  }
+}
+
+.line {
+  border-right: 2px dashed #bac4c280;
+  width: 1px;
+  height: 75%;
+  margin: 20px auto 20px auto;
+}
+
+.container {
+  height: 100%;
+}

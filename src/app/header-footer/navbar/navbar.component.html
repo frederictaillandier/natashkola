@@ -1,0 +1,37 @@
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="title col-auto centered-vert">
+        <a class='centered-vert' [routerLink]="['/landing']">
+          <img class="logo" src="../../../assets/images/footer-header/logo.svg">
+        </a>
+      </div>
+      <div class="col"></div>
+      <a class='nav-link centered-vert' [routerLink]="['/landing']" [queryParams]="{'component':'aboutus'}" >
+        {{'Landing.AboutUs' | translate }}
+      </a>
+      <div class='nav-link centered-vert dropdown'>
+        {{'Courses.Courses' | translate }}
+        <div class="dropdown-content">
+          <a class='nav-link centered-vert' [routerLink]="['/french']">
+            {{'Courses.French.French' | translate }}
+          </a>
+          <a class='nav-link centered-vert' [routerLink]="['/spanish']">
+            {{'Courses.Spanish.Spanish' | translate }}
+          </a>
+        </div>
+      </div>
+      <a class='nav-link centered-vert' [routerLink]="['/how-to']">
+        {{'HowTo.HowTo' | translate }}
+      </a>
+      <div class="col"></div>
+      <pm-language-selection class="centered-vert"></pm-language-selection>
+
+      <!-- send us message button
+      <a class='nav-link centered-vert' [routerLink]="['/about-us']">
+        {{'ContactUs.ContactUs' | translate }}
+      </a>
+      -->
+    </div>
+  </div>
+</nav>

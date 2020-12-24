@@ -1,0 +1,32 @@
+<div class="page">
+  <div class="module">
+    <div class="row">
+    <div class="col-md-6 vertically-centered">
+      <div class="container">
+      <div class="row">
+
+      <h2>{{ 'Landing.MainTitle'|translate }}</h2>
+      </div>
+      <div class="row">
+      <p>{{ 'Landing.MainDescription'|translate }}</p>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a class="btn btn-outline-primary btn-orange"
+             [routerLink]="['/french']">{{'Landing.MainButtonFrench'|translate }}</a>
+        </div>
+        <div class="col-6">
+          <a class="btn btn-outline-primary btn-orange"
+             [routerLink]="['/spanish']">{{'Landing.MainButtonSpanish'|translate }}</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="img-holder">
+        <img src="assets/images/pages/landing/landing_main_group.png"/>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
