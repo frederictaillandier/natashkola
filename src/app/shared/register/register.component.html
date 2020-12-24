@@ -1,11 +1,14 @@
 <div class="page">
   <div class="module">
     <h2>{{"Landing.Register.Title" | translate }}</h2>
-    <p>It's very simple! Give us your phone number or email, and one of our representative will contact you.</p>
-    <div class="send-form">
-      <input [placeholder]="'mail or phone number'" type="text"/>
-      <button class="btn btn-outline-primary btn-orange">Send</button>
-    </div>
+    <p>{{ "Landing.Register.Description" | translate }}</p>
 
+    <p> {{ Mail }} </p>
+    <!-- Send Button
+    <div class="send-form">
+      <input [placeholder]="'Landing.Register.Placeholder' | translate" type="text"/>
+      <button class="btn btn-outline-primary btn-orange">{{"Landing.Register.Send" | translate}}</button>
+    </div>
+    -->
   </div>
 </div>

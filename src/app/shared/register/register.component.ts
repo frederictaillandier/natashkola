@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'pm-register',
@@ -6,4 +7,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  get Mail(): string {
+    return environment.contact.mail;
+  }
 }
