@@ -12,6 +12,7 @@ export class NavbarComponent {
   constructor(private router: Router) {
   }
 
+  isNavbarCollapsed = true;
   showTitle(): boolean {
     return !this.router.url.includes('landing');
   }

@@ -40,13 +40,6 @@ body {
   text-align: center;
 }
 
-.empty-row {
-  height: 10vh;
-}
-
-.empty-row-double {
-  height: 20vh;
-}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -34,7 +34,6 @@
 
 .route {
   position:relative;
-  margin-top: 100px;
 }
 
 .module {
@@ -60,16 +59,6 @@ h3 {
   font-family: 'script', 'arial', sans-serif;
 }
 
-body {
-}
-
-.empty-row {
-  height: 10vh;
-}
-
-.empty-row-double {
-  height: 20vh;
-}
 
 .btn-orange {
   background-color: var(--my_orange);
