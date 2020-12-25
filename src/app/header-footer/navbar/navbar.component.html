@@ -11,11 +11,11 @@
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse right-links" id="navbarsDefault">
     <ul class="navbar-nav">
       <li class="col"></li>
-      <li class="nav-item col">
+      <li class="nav-item col-auto">
         <a class="nav-link" [routerLink]="['/landing']" [queryParams]="{'component':'aboutus'}">{{'Landing.AboutUs' | translate }}</a>
       </li>
 
-      <li class="nav-item dropdown col" ngbDropdown>
+      <li class="nav-item dropdown col-auto" ngbDropdown>
 
         <a class="nav-link dropdown-toggle col" id="id01" ngbDropdownToggle>{{'Courses.Courses' | translate }}</a>
         <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
@@ -24,7 +24,7 @@
         </div>
       </li>
 
-      <li class="nav-item col">
+      <li class="nav-item col-auto">
         <a class="nav-link" [routerLink]="['/how-to']"> {{'HowTo.HowTo' | translate }}</a>
       </li>
       <li class="col"></li>

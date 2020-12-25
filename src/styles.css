@@ -28,7 +28,6 @@
 }
 
 .page {
-  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
@@ -38,7 +37,7 @@
 
 .module {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 a {

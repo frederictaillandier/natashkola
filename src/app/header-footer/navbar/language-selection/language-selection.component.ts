@@ -10,15 +10,19 @@ export class LanguageSelectionComponent {
   languages = [
     {
       code: 'ru',
+      name: 'Руссгки'
     },
     {
-      code: 'en'
+      code: 'en',
+      name: 'English'
     },
     {
       code: 'fr',
+      name: 'Français'
     },
     {
       code: 'es',
+      name: 'Español'
     },
   ];
 
