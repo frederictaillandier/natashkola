@@ -10,7 +10,7 @@ export class LanguageSelectionComponent {
   languages = [
     {
       code: 'ru',
-      name: 'Руссгки'
+      name: 'Русски'
     },
     {
       code: 'en',
