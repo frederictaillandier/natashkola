@@ -10,18 +10,22 @@ export class LanguageSelectionComponent {
   languages = [
     {
       code: 'ru',
+      codeCapital: 'Ru',
       name: 'Русски'
     },
     {
       code: 'en',
+      codeCapital: 'En',
       name: 'English'
     },
     {
       code: 'fr',
+      codeCapital: 'Fr',
       name: 'Français'
     },
     {
       code: 'es',
+      codeCapital: 'Es',
       name: 'Español'
     },
   ];
@@ -29,7 +33,7 @@ export class LanguageSelectionComponent {
   currentLanguageIndex = 0;
 
   get currentLanguageCode(){
-    return this.languages[this.currentLanguageIndex].code;
+    return this.languages[this.currentLanguageIndex].codeCapital;
   }
 
   constructor(private translate: TranslateService) {

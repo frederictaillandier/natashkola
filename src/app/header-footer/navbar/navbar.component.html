@@ -18,9 +18,9 @@
       <li class="nav-item dropdown col-auto" ngbDropdown>
 
         <a class="nav-link dropdown-toggle col" id="id01" ngbDropdownToggle>{{'Courses.Courses' | translate }}</a>
-        <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-          <a class="dropdown-item" [routerLink]="['/french']">{{'Courses.French.French' | translate }}</a>
-          <a class="dropdown-item" [routerLink]="['/spanish']">{{'Courses.Spanish.Spanish' | translate }}</a>
+        <div ngbDropdownMenu aria-labelledby="id01">
+          <a ngbDropdownItem [routerLink]="['/french']">{{'Courses.French.French' | translate }}</a>
+          <a ngbDropdownItem [routerLink]="['/spanish']">{{'Courses.Spanish.Spanish' | translate }}</a>
         </div>
       </li>
 

@@ -4,6 +4,7 @@ nav {
   background-color: white;
   position: sticky;
   width: 100%;
+  text-align: right;
  }
 
 .logo {
@@ -12,4 +13,8 @@ nav {
 
 .navbar-nav {
   width: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+  float: right;
 }
