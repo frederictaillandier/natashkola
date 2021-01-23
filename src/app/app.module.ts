@@ -16,8 +16,8 @@ import {HowToModule} from './pages/how-to/how-to.module';
 import {HowToComponent} from './pages/how-to/how-to.component';
 import {SharedModule} from './shared/shared.module';
 import {CoursesModule} from './pages/courses/courses.module';
-import {CoursesFrenchComponent} from "./pages/courses/french/courses-french.component";
-import {CoursesSpanishComponent} from "./pages/courses/spanish/courses-spanish.component";
+import {CoursesFrenchComponent} from './pages/courses/french/courses-french.component';
+import {CoursesSpanishComponent} from './pages/courses/spanish/courses-spanish.component';
 
 
 // AoT requires an exported function for factories
